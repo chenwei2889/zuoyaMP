@@ -1,0 +1,59 @@
+/**index.wxss**/
+page{background-color:#fff!important;}
+.container .index-bg{width:100%;height:503rpx;position:relative;}
+.container .index-bg swiper{width:100%;height:100%;position:relative;}
+.container .index-bg .slide-navigator{width:100%;height:100%;}
+.container .index-bg .slide-navigator .slide-image{width:100%;height:100%;}
+.container .index-bg .wx-swiper-dot{width:20rpx;height:5rpx;border-radius:3rpx;}
+.container .index-bg .wx-swiper-dots.wx-swiper-dots-horizontal{margin-bottom:5rpx;}
+.content{
+  width: 100%;
+  padding:0 20rpx;
+} 
+.content navigator{
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.content navigator:last-child{
+  border: 0;
+}
+.content .item{
+  width: 100%;
+  height: 149rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .item view:last-child{
+  border: 0
+}
+.content .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content .left .title{
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.content .left .describle{
+  color: #676363;
+}
+.content .right image{
+  width: 82rpx;
+  height: 82rpx;
+}
+.pic{
+  margin-top: 34rpx;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30rpx;
+}
+.pic button{
+  width: 690rpx;
+  height: 112rpx;
+}
+.pic image {
+  max-width: 690rpx;
+  max-height: 112rpx;
+}

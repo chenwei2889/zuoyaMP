@@ -1,0 +1,60 @@
+<!--pages/appointment_project/appointment_project.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <navigator url="../appointment_yuejishi/appointment_yuejishi" hover-class="none">
+    <view class="store">
+      <view class="storeleft">
+        <image src="/images/jishi.png"></image>
+        <text>选择技师</text>
+      </view>
+      <view class="storeright">
+        <text class="jishiname">马丹（Eileen）</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator url="../logs/logs" hover-class="none">
+    <view class="store">
+      <view class="storeleft">
+        <image src="/images/xiangmu.png"></image>
+        <text>服务项目</text>
+      </view>
+      <view class="storeright">
+        <text>请选择</text>
+        <text class='iconfont icon-xiangyou'></text>
+      </view>
+    </view>
+  </navigator>
+  <view class='timelist'>
+    <view class="time">
+      <view bindtap='settimeList' class="settimelist active">
+        <view>今天</view>
+        <view>10-16</view>
+      </view>
+      <view bindtap='settimeList' class="settimelist">
+        <view>明天</view>
+        <view>10-17</view>
+      </view>
+      <view bindtap='settimeList' class="settimelist">
+        <view>后天</view>
+        <view>10-18</view>
+      </view>
+    </view>
+    <view class="scroll">
+      <scroll-view scroll-y enable-flex class="scrollarea active">
+        <block wx:for="{{timeArr}}" wx:key="{{index}}">
+          <text>{{ item.time }}</text>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="nextout">
+    <view class="next">
+      <view class="left">
+        <image src="/images/yuyue2.png"></image>
+        <text>预约时间：</text>
+        <text class="timechoose">请选择</text>
+      </view>
+      <button class="btn" form-type="submit">下一步</button>
+    </view>
+  </view>
+</view>

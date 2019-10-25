@@ -1,0 +1,169 @@
+/* pages/appointment_info/appointment_info.wxss */
+page {
+  background-color: #f3f4f6 !important;
+}
+
+.container {
+  padding: 0 40rpx;
+}
+
+.storeaddress{
+  width: 100%;
+  height: 210rpx;
+  padding: 32rpx 0;
+}
+.storeaddress .title{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+	color: #b5b6b8;
+  margin-bottom: 25rpx;
+}
+.storeaddress .title image{
+  width: 29rpx;
+  height: 27rpx;
+  margin-right: 25rpx;
+}
+.storeaddress view:nth-of-type(2){
+  font-size: 36rpx;
+  margin-left: 54rpx;
+	color: #333333;
+}
+.storeaddress view:nth-of-type(3){
+  font-size: 24rpx;
+  margin-left: 54rpx;
+  line-height: 50rpx;
+	color: #333333;
+}
+.jishiserve{
+  width: 100%;
+  height: 210rpx;
+  padding: 32rpx 0;
+}
+.jishiserve .title{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+	color: #b5b6b8;
+  margin-bottom: 25rpx;
+}
+.jishiserve .title image{
+  width: 24rpx;
+  height: 27rpx;
+  margin-right: 25rpx;
+}
+.jishiserve .content{
+  display: flex;
+  justify-content: space-between;
+}
+.jishiserve .content .left{
+  margin-left: 54rpx;
+}
+.jishiserve .content .left view:first-child{
+  width: 420rpx;
+  font-size: 36rpx;
+	color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jishiserve .content .left view:last-child{
+  font-size: 24rpx;
+  line-height: 50rpx;
+	color: #333333;
+}
+.jishiserve .content .right{
+  font-size: 38rpx;
+	color: #f15a31;
+}
+.person{
+  width: 100%;
+  padding: 32rpx 0;
+}
+.person .title{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+	color: #b5b6b8;
+  margin-bottom: 25rpx;
+}
+.person .title image{
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 25rpx;
+}
+.person .content{
+  width: 100%;
+	height: 240rpx;
+  padding: 36rpx;
+	background-color: #ffffff;
+	border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.person .content .firstrow{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+	color: #333333;
+  padding-bottom: 35rpx;
+  border-bottom: solid 1rpx #cccccc;
+}
+.person .content .firstrow view:last-child{
+	color: #cccccc;
+}
+.person .content .secondrow{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+	color: #333333;
+}
+.person .content .secondrow view:last-child{
+	color: #cccccc;
+}
+.message{
+  width: 100%;
+  padding: 32rpx 0;
+}
+.message .title{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+	color: #b5b6b8;
+  margin-bottom: 25rpx;
+}
+.message .title image{
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 25rpx;
+}
+.message .request{
+  width: 590rpx;
+  padding: 40rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.submitout{
+  padding-bottom: 50rpx;
+}
+.submit{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+	color: #333333;
+  padding-left: 40rpx;
+}
+.submit .btn{
+  width: 300rpx;
+	height: 100rpx;
+  color: #fff;
+	background-color: #f15a31;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 0；
+}

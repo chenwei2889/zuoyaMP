@@ -1,0 +1,14 @@
+<!--pages/appointment_success/appointment_success.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="main">
+    <image src="/images/yuyuesuccess.png"></image>
+    <view>预约成功</view>
+    <view>到店凭手机号享受服务</view>
+  </view>
+  <view class="time">
+    <view>预约时间</view>
+    <view>10-10 20:30</view>
+  </view>
+  <button class="btn" hover-class="none" bindtap="toDetail">查看预约详情</button>
+</view>

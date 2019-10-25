@@ -1,0 +1,64 @@
+<!--pages/appointment_choose_store/appointment_choose_store.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="location">
+  <text>所选城市：</text>
+  <text>郑州</text>
+  <image src="/images/location.png"></image>
+</view>
+<view class="container">
+  <view class="addresslist">
+    <view class="item">
+      <view class="choose">
+        <image src="/images/xuanzhongstore.png"></image>
+      </view>
+      <view class="itemleft">
+        <view class="title">
+          <view>正弘中心店</view>
+          <view>（No.3102）</view>
+        </view>
+        <view class="time">
+          <image src="/images/yuyue.png"></image>
+          <view>07:00-20:00</view>
+        </view>
+        <view class="address">
+          <image src="/images/location.png"></image>
+          <view>金水区花园路126号正弘中心一层大堂xzcxzczxcczccxzxczc</view>
+        </view>
+      </view>
+      <view class="itemright">
+        <view class="distance">距您7.0km</view>
+        <navigator url="../appointment_store_detail/appointment_store_detail" hover-class="none">
+          <view class="detail">
+            <view>查看详情</view>
+            <image src="/images/detail.png"></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="item">
+      <view class="itemleft">
+        <view class="title">
+          <view>正弘中心店</view>
+          <view>（No.3102）</view>
+        </view>
+        <view class="time">
+          <image src="/images/yuyue.png"></image>
+          <view>07:00-20:00</view>
+        </view>
+        <view class="address">
+          <image src="/images/location.png"></image>
+          <view>金水区花园路126号</view>
+        </view>
+      </view>
+      <view class="itemright">
+        <view class="distance">距您7.0km</view>
+        <navigator url="../appointment_store_detail/appointment_store_detail" hover-class="none">
+          <view class="detail">
+            <view>查看详情</view>
+            <image src="/images/detail.png"></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

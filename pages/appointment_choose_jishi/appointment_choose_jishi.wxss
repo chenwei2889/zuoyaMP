@@ -1,0 +1,64 @@
+/* pages/appointment_choose_jishi/appointment_choose_jishi.wxss */
+page {
+  background-color: #f3f4f6 !important;
+}
+
+.container {
+  padding: 0 40rpx;
+}
+
+.store {
+  width: 670rpx;
+  height: 120rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+
+.store .storeleft image {
+  width: 29rpx;
+  height: 27rpx;
+}
+
+.store .storeleft text {
+  font-size: 28rpx;
+  margin-left: 23rpx;
+  color: #333;
+}
+
+.store .storeright text {
+  font-size: 28rpx;
+  color: #ccc;
+  margin-right: 23rpx;
+}
+.jishilistout{
+  padding-bottom: 40rpx;
+}
+.jishilist{
+  width: 100%;
+  height: auto;
+  padding: 0 33rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.jishilist .item{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.jishilist .item image{
+  width: 130rpx;
+  height: 130rpx;
+  margin-right: 25rpx;
+}

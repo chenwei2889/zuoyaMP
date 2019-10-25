@@ -1,0 +1,49 @@
+/* pages/appointment_servelist/appointment_servelist.wxss */
+
+page {
+  background-color: #f3f4f6 !important;
+}
+
+.container {
+  padding: 0 40rpx;
+}
+
+.contentout {
+  padding-bottom: 30rpx;
+}
+
+.content {
+  width: 670rpx;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 5rpx 30rpx 45rpx 30rpx;
+  margin-top: 25rpx;
+}
+
+.content .item {
+  height: 149rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .item .itemleft {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.content .item .itemleft image {
+  width: 91rpx;
+  height: 91rpx;
+  margin-left: 2rpx;
+  margin-right: 23rpx;
+}
+
+.content .item .itemright {
+  font-size: 26rpx;
+  color: #b5b6b8;
+}

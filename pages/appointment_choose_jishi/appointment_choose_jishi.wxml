@@ -1,0 +1,55 @@
+<!--pages/appointment_choose_jishi/appointment_choose_jishi.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <navigator url="../logs/logs" hover-class="none">
+    <view class="store">
+      <view class="storeleft">
+        <image src="/images/jishi.png"></image>
+        <text>技师</text>
+      </view>
+      <view class="storeright">
+        <text>选择技师</text>
+      </view>
+    </view>
+  </navigator>
+  <view class="jishilistout">
+    <view class="jishilist">
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+      <view class="item">
+        <image src="/images/touxiang.png"></image>
+        <text>马丹（Eileen）</text>
+      </view>
+    </view>
+  </view>
+</view>

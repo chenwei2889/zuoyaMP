@@ -1,0 +1,86 @@
+<!--pages/appointment_yuejishi/appointment_yuejishi.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <navigator url="../logs/logs" hover-class="none">
+    <view class="store">
+      <view class="storeleft">
+        <image src="/images/store.png"></image>
+        <text>正弘中心店</text>
+      </view>
+      <view class="storeright">
+        <text>6666-6666</text>
+        <text class='iconfont icon-xiangyou'></text>
+      </view>
+    </view>
+  </navigator>
+  <view class="jishilistout">
+    <view class="jishilist">
+      <navigator url="../logs/logs" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/touxiang.png"></image>
+            <text>马丹（Eileen）</text>
+          </view>
+          <view class="itemright">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../logs/logs" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/touxiang.png"></image>
+            <text>马丹（Eileen）</text>
+          </view>
+          <view class="itemright">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../logs/logs" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/touxiang.png"></image>
+            <text>马丹（Eileen）</text>
+          </view>
+          <view class="itemright">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../logs/logs" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/touxiang.png"></image>
+            <text>马丹（Eileen）</text>
+          </view>
+          <view class="itemright">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../logs/logs" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/touxiang.png"></image>
+            <text>马丹（Eileen）</text>
+          </view>
+          <view class="itemright">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../logs/logs" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/touxiang.png"></image>
+            <text>马丹（Eileen）</text>
+          </view>
+          <view class="itemright">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

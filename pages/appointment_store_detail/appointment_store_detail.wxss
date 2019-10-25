@@ -1,0 +1,60 @@
+/* pages/appointment_store_detail/appointment_store_detail.wxss */
+page {
+  background-color: #fff !important;
+}
+
+/* .container {
+  padding: 0 30rpx;
+} */
+.title{
+  width: 100%;
+  height: 110rpx;
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title view{
+  font-size: 30rpx;
+	color: #222222;
+}
+.title image{
+  width: 38rpx;
+	height: 38rpx;
+}
+.storeopen{
+  display: flex;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+	color: #787878;
+}
+.storeopen view:first-child{
+  margin-right: 60rpx;
+}
+.storeaddress{
+  display: flex;
+  padding: 31rpx 30rpx 48rpx 30rpx;
+  font-size: 26rpx;
+	color: #787878;
+}
+.storeaddress text:first-child{
+  margin-right: 60rpx;
+  white-space: nowrap;
+}
+.empty{
+  width: 100%;
+  height: 16rpx;
+  background-color: #e2e2e2;
+}
+.storephoto{
+  padding: 30rpx;
+}
+.storephoto .photolist{
+  margin-top: 30rpx;
+  display: flex;justify-content: space-between;
+}
+.storephoto .photolist image{
+  width: 216rpx;
+	height: 216rpx;
+	border-radius: 10rpx;
+}

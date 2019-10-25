@@ -1,0 +1,64 @@
+<!--pages/appointment_info/appointment_info.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="storeaddress">
+    <view class="title">
+      <image src="/images/store.png"></image>
+      <view>门店地址</view>
+    </view>
+    <view>北京双井富力城店</view>
+    <view>北京市朝阳区双井富力城星光大道D座10-7</view>
+  </view>
+  <view class="storeaddress">
+    <view class="title">
+      <image src="/images/yuyue2.png"></image>
+      <view>预约到店时间</view>
+    </view>
+    <view>10-17今天14:15</view>
+    <view>服务时长约120分钟</view>
+  </view>
+  <view class="jishiserve">
+    <view class="title">
+      <image src="/images/xiangmu.png"></image>
+      <view>服务和技师</view>
+    </view>
+    <view class="content">
+      <view class="left">
+        <view>我和我的祖国相“手”系列</view>
+        <view>马丹（Eileen）</view>
+      </view>
+      <view class="right">￥598.00</view>
+    </view>
+  </view>
+  <view class="person">
+    <view class="title">
+      <image src="/images/xiangmu.png"></image>
+      <view>到店人</view>
+    </view>
+    <view class="content">
+      <view class="firstrow">
+        <view>沃特脉轮</view>
+        <view>到店人姓名</view>
+      </view>
+      <view class="secondrow">
+        <view>18888888888</view>
+        <view>手机号</view>
+      </view>
+    </view>
+  </view>
+  <view class="message">
+    <view class="title">
+      <image src="/images/xiangmu.png"></image>
+      <view>捎句话</view>
+    </view>
+    <view>
+      <textarea class="request" auto-height placeholder="可填写偏好或要求，不超过200字" placeholder-style="color:#cccccc;font-size:28rpx;"></textarea>
+    </view>
+  </view>
+</view>
+<view class="submitout">
+  <view class="submit">
+    <view>10-17今天14:15</view>
+    <button class="btn" hover-class="none">提交预约</button>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/news/news.wxml-->
+<navbar parameter='{{parameter}}'></navbar>

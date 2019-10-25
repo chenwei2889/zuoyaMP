@@ -1,0 +1,104 @@
+/* pages/appointment_choose_store/appointment_choose_store.wxss */
+page {
+  background-color: #fff !important;
+}
+
+.container {
+  padding: 0 30rpx;
+}
+.location{
+  width: 100%;
+  height: 72rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  border-bottom: 20rpx solid #FAFAFA;
+}
+.location text:nth-of-type(1){
+  color: #9f9e9e;
+}
+.location text:nth-of-type(2){
+  color: #333;
+  margin-right: 10rpx;
+}
+.location image{
+  width: 21rpx;
+  height: 25rpx;
+}
+.item{
+  width: 100%;
+  height: 170rpx;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #e4e4e4;
+}
+.item .choose{
+  display: flex;
+  align-items: center;
+}
+.item .choose image{
+  width: 31rpx;
+	height: 22rpx;
+}
+.item .itemleft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item .itemleft .title{
+  display: flex;
+  font-size: 30rpx;
+  color: #222;
+}
+.item .itemleft .time{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+	color: #666666;
+}
+.item .itemleft .time image{
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 7rpx;
+}
+.item .itemleft .address{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+	color: #666666;
+}
+.item .itemleft .address view{
+  width: 430rpx;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item .itemleft .address image{
+  width: 21rpx;
+  height: 25rpx;
+  margin-right: 7rpx;
+}
+.item .itemright{
+  padding-top: 45rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.item .itemright .distance{
+  font-size: 22rpx;
+	color: #3b3b3b;
+}
+.item .itemright .detail{
+  display: flex;
+  align-items: center;
+  margin-top: 14rpx;
+  font-size: 22rpx;
+	color: #f15a31;
+}
+.item .itemright .detail image{
+  width: 24rpx;
+	height: 24rpx;
+  margin-left: 10rpx;
+}

@@ -1,0 +1,132 @@
+/* pages/appointment/appointment.wxss */
+
+page {
+  background-color: #f3f4f6 !important;
+}
+
+.container {
+  padding: 0 40rpx;
+}
+
+.store {
+  width: 670rpx;
+  height: 120rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+
+.store .storeleft image {
+  width: 29rpx;
+  height: 27rpx;
+}
+
+.store .storeleft text {
+  font-size: 28rpx;
+  margin-left: 23rpx;
+  color: #333;
+}
+
+.store .storeright text {
+  font-size: 28rpx;
+  color: #ccc;
+  margin-right: 23rpx;
+}
+
+.time {
+  height: 103rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  margin-bottom: 16rpx;
+}
+
+.timelist .settimelist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.timelist .settimelist.active {
+  color: #f15a31;
+}
+
+.scroll {
+  width: 100%;
+  height: 632rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.scroll .scrollarea {
+  box-sizing: border-box;
+  height: 632rpx;
+  padding: 40rpx 0 0 50rpx;
+}
+
+.scroll .scrollarea.active::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20rpx solid transparent;
+  border-right: 20rpx solid transparent;
+  border-bottom: 20rpx solid #fff;
+  position: absolute;
+  top: -19rpx;
+  z-index: 99;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.scroll .scrollarea text {
+  font-size: 28rpx;
+  width: 12%;
+  color: #333;
+  margin-right: 8%;
+  margin-bottom: 70rpx;
+  text-align: center;
+  float: left;
+}
+.nextout{
+  padding-bottom: 40rpx;
+}
+.next{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  width: 670rpx;
+	height: 120rpx;
+	background-color: #ffffff;
+	border-radius: 10rpx;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.next .left text:nth-of-type(1){
+  margin-left: 23rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+.next .left .timechoose{
+  font-size: 28rpx;
+  color:#f15a31; 
+}
+.next .left image{
+  width: 26rpx;
+  height: 26rpx;
+}
+.next button{
+  width: 250rpx;
+	height: 120rpx;
+	background-color: #f15a31;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 32rpx;
+	color: #fefefe;
+}

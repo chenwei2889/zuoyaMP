@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <!-- 轮播开始 -->
+  <view class='index-bg'>
+    <swiper indicator-dots="true" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255,255,255,0.6)" indicator-active-color="#fff">
+      <!-- <block wx:for="{{imgUrls}}" wx:key> -->
+        <swiper-item>
+          <!-- <navigator url='{{item.url}}' class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="{{item.pic}}" class="slide-image" />
+          </navigator> -->
+          <navigator url="../logs/logs" class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="/images/banner.png" class="slide-image" mode="scaleToFill"/>
+          </navigator>
+        </swiper-item>
+        <swiper-item>
+          <!-- <navigator url='{{item.url}}' class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="{{item.pic}}" class="slide-image" />
+          </navigator> -->
+          <navigator url="../logs/logs" class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="/images/banner.png" class="slide-image" mode="scaleToFill"/>
+          </navigator>
+        </swiper-item>
+        <swiper-item>
+          <!-- <navigator url='{{item.url}}' class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="{{item.pic}}" class="slide-image" />
+          </navigator> -->
+          <navigator url="../logs/logs" class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+            <image src="/images/banner.png" class="slide-image" mode="scaleToFill"/>
+          </navigator>
+        </swiper-item>
+      <!-- </block> -->
+    </swiper>
+  </view>
+  <!-- 轮播结束 -->
+  <!-- 内容部分开始 -->
+  <view class="content">
+    <navigator url="../logs/logs" hover-class="none">
+      <view class="item">
+      <view class="left">
+        <text class="title">现在预约</text>
+        <text class="describle">RESERVE NOW</text>
+      </view>
+      <view class="right">
+        <image src="/images/collection.png"></image>
+      </view>
+    </view>
+    </navigator>
+    <navigator url="../logs/logs" hover-class="none">
+      <view class="item">
+      <view class="left">
+        <text class="title">现在预约</text>
+        <text class="describle">RESERVE NOW</text>
+      </view>
+      <view class="right">
+        <image src="/images/collection.png"></image>
+      </view>
+    </view>
+    </navigator>
+    <navigator url="../logs/logs" hover-class="none">
+      <view class="item">
+      <view class="left">
+        <text class="title">现在预约</text>
+        <text class="describle">RESERVE NOW</text>
+      </view>
+      <view class="right">
+        <image src="/images/collection.png"></image>
+      </view>
+    </view>
+    </navigator>
+    <navigator url="../logs/logs" hover-class="none">
+      <view class="item">
+      <view class="left">
+        <text class="title">现在预约</text>
+        <text class="describle">RESERVE NOW</text>
+      </view>
+      <view class="right">
+        <image src="/images/collection.png"></image>
+      </view>
+    </view>
+    </navigator>
+  </view>
+  <!-- 内容部分结束 -->
+  <!-- 点击分享开始 -->
+  <view class="pic" bindtap="share">
+    <button hover-class="none" open-type="share" lang="zh_CN">
+      <image src="/images/indexshare.png"></image>
+    </button>
+  </view>
+  <!-- 点击分享结束 -->
+</view>

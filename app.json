@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/appointment/appointment",
+    "pages/appointment_yuejishi/appointment_yuejishi",
+    "pages/appointment_servelist/appointment_servelist",
+    "pages/appointment_choose_jishi/appointment_choose_jishi",
+    "pages/appointment_info/appointment_info",
+    "pages/appointment_detail/appointment_detail",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/mall/mall",
+    "pages/user/user",
+    "pages/appointment_choose_service/appointment_choose_service",
+    "pages/appointment_choose_store/appointment_choose_store",
+    "pages/appointment_project/appointment_project",
+    "pages/appointment_store_detail/appointment_store_detail",
+    "pages/appointment_success/appointment_success",
+    "pages/logs/logs",
+    "components/navbar/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#282828",
+    "selectedColor": "#e93323",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/1-001.png",
+        "selectedIconPath": "images/1-002.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/2-001.png",
+        "selectedIconPath": "images/2-002.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "iconPath": "images/3-001.png",
+        "selectedIconPath": "images/3-002.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "iconPath": "images/3-001.png",
+        "selectedIconPath": "images/3-002.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/4-001.png",
+        "selectedIconPath": "images/4-002.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

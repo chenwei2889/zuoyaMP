@@ -1,0 +1,3 @@
+<!--pages/appointment_choose_service/appointment_choose_service.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+
