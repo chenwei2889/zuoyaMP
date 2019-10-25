@@ -71,8 +71,8 @@
     <radio-group class="cancelreason">
       <radio checked>我不想要了</radio>
       <radio>与商家达成一致，取消订单</radio>
-      <radio>我想换个时间</radio>
-      <radio>商家拒绝提供这个服务</radio>
+      <!-- <radio>我想换个时间</radio>
+      <radio>商家拒绝提供这个服务</radio> -->
     </radio-group>
     <view class="showbtn">
       <button hover-class="none" bindtap="submitcancel">提交并取消</button>
