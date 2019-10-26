@@ -1,4 +1,5 @@
 // pages/appointment_servelist/appointment_servelist.js
+var app = getApp();
 Page({
 
   /**
@@ -10,17 +11,23 @@ Page({
       'return': '1',
       'title': '选择的服务',
       'class': '2'
-    }
-  },
-  scrollFixed() {
-    scrollTop: '10rpx';
-    isFixed: true;
+    },
+    navH: 0
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.getSystemInfo({
+      success: res => {
+        //导航高度
+        this.setData({
+          navH: app.globalData.navHeight * (res.windowWidth / 750)
+        })
+      }, fail(err) {
+        console.log(err);
+      }
+    });
   },
 
   /**
@@ -34,7 +41,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

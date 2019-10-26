@@ -32,32 +32,32 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/1-001.png",
-        "selectedIconPath": "images/1-002.png",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_sec.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/news/news",
-        "iconPath": "images/2-001.png",
-        "selectedIconPath": "images/2-002.png",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news_sec.png",
         "text": "消息"
       },
       {
         "pagePath": "pages/mall/mall",
-        "iconPath": "images/3-001.png",
-        "selectedIconPath": "images/3-002.png",
+        "iconPath": "images/mall.png",
+        "selectedIconPath": "images/mall_sec.png",
         "text": "商城"
       },
       {
         "pagePath": "pages/appointment/appointment",
-        "iconPath": "images/3-001.png",
-        "selectedIconPath": "images/3-002.png",
+        "iconPath": "images/appointment.png",
+        "selectedIconPath": "images/appointment_sec.png",
         "text": "预约"
       },
       {
         "pagePath": "pages/user/user",
-        "iconPath": "images/4-001.png",
-        "selectedIconPath": "images/4-002.png",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_sec.png",
         "text": "我的"
       }
     ]

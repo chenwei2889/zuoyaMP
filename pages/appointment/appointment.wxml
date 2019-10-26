@@ -13,7 +13,7 @@
       </view>
     </view>
   </navigator>
-  <navigator url="../appointment_info/appointment_info" hover-class="none">
+  <navigator url="../appointment_servelist/appointment_servelist" hover-class="none">
     <view class="store">
       <view class="storeleft">
         <image src="/images/xiangmu.png"></image>

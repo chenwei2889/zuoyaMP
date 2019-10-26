@@ -2,7 +2,7 @@
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
   <view class="srollx">
-    <van-tabs sticky swipeable>
+    <van-tabs sticky swipeable offset-top="{{ navH-0.00001 }}">
       <van-tab title="全部">
         <view class="contentout">
           <view class="content">
