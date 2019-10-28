@@ -1,0 +1,69 @@
+<!--pages/appointment_jishi_detail/appointment_jishi_detail.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="detail">
+    <image src="/images/touxiang.png"></image>
+    <view class="jishi">马丹（Eileen）</view>
+    <view class="rate">
+      <view class="comment">
+        <view>评论</view>
+        <van-rate color="#f15a31" size="{{ 15 }}" readonly allow-half value="{{ 4.5 }}" />
+        <text>9.0</text>
+      </view>
+      <navigator hover-class="none" url="../appointment_jishi_comment/appointment_jishi_comment">
+        <view class="look">查看评论</view>
+      </navigator>
+    </view>
+    <view class="store">
+      <view class="left">门店</view>
+      <view class="right">
+        <view>正弘中心店</view>
+        <view>郑州市金水区正弘中心D区10-7</view>
+      </view>
+    </view>
+  </view>
+  <view class="project">
+    <view class="title">可服务项目</view>
+    <view class="content">
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+        </view>
+        <view class="itemright">
+          <view>高效抗氧手部护理</view>
+          <view>￥498.00</view>
+          <view>服务时长约60分钟</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+        </view>
+        <view class="itemright">
+          <view>高效抗氧手部护理</view>
+          <view>￥498.00</view>
+          <view>服务时长约60分钟</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+        </view>
+        <view class="itemright">
+          <view>高效抗氧手部护理</view>
+          <view>￥498.00</view>
+          <view>服务时长约60分钟</view>
+        </view>
+      </view><view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+        </view>
+        <view class="itemright">
+          <view>高效抗氧手部护理</view>
+          <view>￥498.00</view>
+          <view>服务时长约60分钟</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

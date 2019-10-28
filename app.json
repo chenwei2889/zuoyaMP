@@ -6,6 +6,8 @@
     "pages/appointment_choose_jishi/appointment_choose_jishi",
     "pages/appointment_info/appointment_info",
     "pages/appointment_detail/appointment_detail",
+    "pages/appointment_jishi_detail/appointment_jishi_detail",
+    "pages/appointment_jishi_comment/appointment_jishi_comment",
     "pages/index/index",
     "pages/news/news",
     "pages/mall/mall",
@@ -32,8 +34,8 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home_sec.png",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_sec.png",
         "text": "首页"
       },
       {

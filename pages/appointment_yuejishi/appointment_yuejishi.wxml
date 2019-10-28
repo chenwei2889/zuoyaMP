@@ -22,7 +22,10 @@
             <text>马丹（Eileen）</text>
           </view>
           <view class="itemright">
-            <text>预约</text>
+            <view>
+              <view>9.0</view>
+              <van-rate color="#f15a31" size="{{ 18 }}" readonly allow-half value="{{ 4.5 }}" />
+            </view>
           </view>
         </view>
       </navigator>
@@ -33,7 +36,10 @@
             <text>马丹（Eileen）</text>
           </view>
           <view class="itemright">
-            <text>预约</text>
+            <view>
+              <view>9.0</view>
+              <van-rate color="#f15a31" size="{{ 18 }}" readonly allow-half value="{{ 4.5 }}" />
+            </view>
           </view>
         </view>
       </navigator>
@@ -44,7 +50,10 @@
             <text>马丹（Eileen）</text>
           </view>
           <view class="itemright">
-            <text>预约</text>
+            <view>
+              <view>9.0</view>
+              <van-rate color="#f15a31" size="{{ 18 }}" readonly allow-half value="{{ 4.5 }}" />
+            </view>
           </view>
         </view>
       </navigator>
@@ -55,29 +64,10 @@
             <text>马丹（Eileen）</text>
           </view>
           <view class="itemright">
-            <text>预约</text>
-          </view>
-        </view>
-      </navigator>
-      <navigator url="../logs/logs" hover-class="none">
-        <view class="item">
-          <view class="itemleft">
-            <image src="/images/touxiang.png"></image>
-            <text>马丹（Eileen）</text>
-          </view>
-          <view class="itemright">
-            <text>预约</text>
-          </view>
-        </view>
-      </navigator>
-      <navigator url="../logs/logs" hover-class="none">
-        <view class="item">
-          <view class="itemleft">
-            <image src="/images/touxiang.png"></image>
-            <text>马丹（Eileen）</text>
-          </view>
-          <view class="itemright">
-            <text>预约</text>
+            <view>
+              <view>9.0</view>
+              <van-rate color="#f15a31" size="{{ 18 }}" readonly allow-half value="{{ 4.5 }}" />
+            </view>
           </view>
         </view>
       </navigator>
