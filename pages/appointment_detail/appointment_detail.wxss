@@ -216,7 +216,7 @@ page {
   margin-top: 33rpx;
   margin-bottom: 46rpx;
 }
-.cancelshow .cancelreason{
+/* .cancelshow .cancelreason{
   width: 100%;
   height: 450rpx;
   padding: 0 40rpx;
@@ -226,6 +226,19 @@ page {
   justify-content: space-around;
   font-size: 34rpx;
 	color: #444444;
+} */
+.cancelshow view:nth-of-type(2){
+  font-size: 32rpx;
+	color: #333333;
+  text-align: center;
+  margin-top: 58rpx;
+  margin-bottom: 21rpx;
+}
+.cancelshow view:nth-of-type(3){
+  font-size: 22rpx;
+	color: #666666;
+  text-align: center;
+  margin-bottom: 30rpx;
 }
 .cancelshow button{
   width: 100%;

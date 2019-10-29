@@ -1,0 +1,127 @@
+/* pages/project_detail/project_detail.wxss */
+
+page {
+  background-color: #fff !important;
+}
+
+.product-bg {
+  width: 100%;
+  height: 503rpx;
+  position: relative;
+}
+
+.product-bg swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.product-bg .slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.product-bg .pages {
+  position: absolute;
+  background-color: #fff;
+  height: 34rpx;
+  padding: 0 10rpx;
+  border-radius: 3rpx;
+  right: 30rpx;
+  bottom: 30rpx;
+  line-height: 34rpx;
+  font-size: 24rpx;
+  color: #050505;
+}
+.container{
+  padding-top: 70rpx;
+  padding-bottom: 40rpx;
+  width: 100%;
+}
+
+.title{
+  padding: 0 40rpx;
+  border-bottom: 16rpx solid #f2f3f5;
+}
+.title .serve{
+  font-size: 32rpx;
+	color: #333333;
+  margin-bottom: 40rpx;
+}
+.title .price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40rpx;
+	color: #f15a31;
+  margin-bottom: 32rpx;
+}
+.title .price view:last-child{
+  font-size: 26rpx;
+	color: #999999;
+}
+
+.store{
+  width: 100%;
+  border-bottom: 16rpx solid #f2f3f5;
+  padding: 0 40rpx;
+}
+
+.store image{
+  width: 35rpx;
+	height: 35rpx;
+}
+
+.store .concact{
+  padding: 25rpx 0;
+  display: flex;
+  width: 100%;
+  height: 102rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store .location{
+  padding: 25rpx 0;
+  display: flex;
+  width: 100%;
+  height: 102rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.store .location image{
+  width: 33rpx;
+	height: 41rpx;
+}
+
+.detail{
+  padding-bottom: 100rpx;
+}
+.detail .name{
+  margin-top: 43rpx;
+  text-align: center;
+}
+
+.btn{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+.btn .cancel{
+  width: 30%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #edecec;
+  color: #666666;
+  border-radius: 0;
+}
+.btn .appoint{
+  width: 70%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #F15A31;
+  color: #fff;
+  border-radius: 0;
+}

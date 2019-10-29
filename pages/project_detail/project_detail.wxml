@@ -1,0 +1,55 @@
+<!--pages/project_detail/project_detail.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class='product-bg'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" bindchange="change">
+    <!-- <block wx:for="{{imgUrls}}" wx:key> -->
+    <swiper-item>
+      <!-- <image src="{{item}}" class="slide-image" /> -->
+      <image src="/images/banner.png" class="slide-image" />
+    </swiper-item>
+    <!-- </block> -->
+  </swiper>
+  <view class='pages'>{{currents}}/{{imgUrls.length || 1}}</view>
+</view>
+<view class="container">
+  <view class="title">
+    <view class="serve">高效手部氧护理</view>
+    <view class="price">
+      <view>￥480.00</view>
+      <view>服务时长约60分钟</view>
+    </view>
+  </view>
+  <view class="store">
+    <view class="concact">
+      <view>正弘中心店</view>
+      <view bindtap="concact">
+        <image src="/images/phone.png"></image>
+      </view>
+    </view>
+    <view class="location">
+      <view>东风路花园路交叉口</view>
+      <view bindtap="location">
+        <image src="/images/location.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="detail">
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+    <view class="name">—— 项目详情 ——</view>
+  </view>
+</view>
+<form>
+  <view class="btn">
+    <button class="cancel" form-type="submit" hover-class="none">返回</button>
+    <button class="appoint" form-type="submit" hover-class="none">立即预约</button>
+  </view>
+</form>

@@ -6,7 +6,8 @@
       <van-tab title="全部">
         <view class="contentout">
           <view class="content">
-            <view class="item">
+            <navigator url="../project_detail/project_detail" hover-class="none">
+              <view class="item">
               <view class="itemleft">
                 <image src="/images/hand.png"></image>
                 <text>高效抗氧手部护理</text>
@@ -15,6 +16,7 @@
                 <text>约120分钟</text>
               </view>
             </view>
+            </navigator>
             <view class="item">
               <view class="itemleft">
                 <image src="/images/hand.png"></image>
