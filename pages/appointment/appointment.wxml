@@ -25,7 +25,7 @@
       </view>
     </view>
   </navigator>
-  <navigator url="../appointment_yuejishi/appointment_yuejishi" hover-class="none">
+  <navigator url="../appointment_payway/appointment_payway" hover-class="none">
     <view class="store">
       <view class="storeleft">
         <image src="/images/jishi.png"></image>

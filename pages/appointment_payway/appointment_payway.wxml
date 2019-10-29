@@ -1,0 +1,39 @@
+<!--pages/appointment_payway/appointment_payway.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class = "container" >
+  <image src='/images/paywaybg.png' class="paywaybg"></image>
+  <view class="wepay">
+    <image src="/images/wepay.png"></image>
+    <view>微信支付</view>
+    <radio></radio>
+  </view>
+  <view class="cardpay" bindtap="choosemembercard">
+    <image src="/images/cardpay.png"></image>
+    <view>会员卡支付</view>
+    <text class='iconfont icon-xiangyou'></text>
+  </view>
+  <view class="submit">
+    <button hover-class="none" class="btn">立即支付</button>
+  </view>
+</view>
+<!-- 选择会员卡蒙版 -->
+<view class="choosemembercard">
+  <van-popup show="{{ Show }}" position="bottom" custom-style="height: 32%" bind:close="onClose">
+    <view class="title">选择会员卡</view>
+    <radio-group class="cancelreason">
+      <radio checked>
+        <image src="/images/membercard.png" class="membercard"></image>
+        <text>会员卡名称（卡内余额：￥300.00）</text>
+      </radio>
+      <radio>
+        <image src="/images/membercard.png" class="membercard"></image>
+        <text>会员卡名称（卡内余额：￥300.00）</text>
+      </radio>
+      <radio>
+        <image src="/images/membercard.png" class="membercard"></image>
+        <text>会员卡名称（卡内余额：￥300.00）</text>
+      </radio>
+    </radio-group>
+  </van-popup>
+</view>
+<!-- 选择会员卡蒙版 -->

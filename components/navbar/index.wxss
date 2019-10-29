@@ -10,7 +10,7 @@
 }
 
 .navbar.on {
-  background-color: #e93323;
+  background-color: #F15A31;
 }
 
 .navbar.black {

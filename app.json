@@ -6,6 +6,7 @@
     "pages/appointment_choose_jishi/appointment_choose_jishi",
     "pages/appointment_info/appointment_info",
     "pages/appointment_detail/appointment_detail",
+    "pages/appointment_payway/appointment_payway",
     "pages/appointment_jishi_detail/appointment_jishi_detail",
     "pages/appointment_jishi_comment/appointment_jishi_comment",
     "pages/project_detail/project_detail",
