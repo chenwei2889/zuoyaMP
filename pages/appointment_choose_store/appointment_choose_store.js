@@ -21,9 +21,10 @@ Page({
     navH: "",
   },
 
-  toStoreDetail() {
+  toStoreDetail(e) {
+    let storeid = e.currentTarget.dataset.storeid
     wx.navigateTo({
-      url: '../appointment_store_detail/appointment_store_detail',
+      url: `../appointment_store_detail/appointment_store_detail?storeid=${storeid}`,
     })
   },
   selectedStore: function (e) {

@@ -15,6 +15,7 @@ page {
 .content {
   width: 670rpx;
   height: auto;
+  min-height: 1000rpx;
   background-color: #fff;
   border-radius: 10rpx;
   padding: 5rpx 30rpx 45rpx 30rpx;

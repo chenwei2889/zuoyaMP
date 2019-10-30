@@ -1,4 +1,5 @@
 // pages/appointment_store_detail/appointment_store_detail.js
+var app = getApp();
 Page({
 
   /**
@@ -9,7 +10,10 @@ Page({
       'navbar': '1',
       'return': '1',
       'title': '门店详情'
-    }
+    },
+    store_id: '',
+    storeInfo: [],
+    photoList: []
   },
 
   concact() {
@@ -18,11 +22,37 @@ Page({
     })
   },
 
+  getStoreDetail: function () {
+    var that = this;
+    app.baseGet(app.U({
+      c: 'appointment_api',
+      a: 'get_store_detail',
+      q: {
+        store_id: this.data.store_id
+      }
+    }), function (res) {
+      console.log(res)
+      let storeInfo = res.data
+      let images = res.data.images
+
+      that.setData({
+        storeInfo: storeInfo,
+        photoList: images
+      });
+    }, function () {
+
+    });
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    this.setData({
+      store_id: options.storeid
+    });
+    this.getStoreDetail()
   },
 
   /**

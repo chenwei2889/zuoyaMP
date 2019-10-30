@@ -48,16 +48,17 @@ page {
   background-color: #e2e2e2;
 }
 .storephoto{
-  padding: 30rpx;
+  padding: 30rpx 0 0 30rpx ;
 }
 .storephoto .photolist{
   margin-top: 30rpx;
-  display: flex;justify-content: space-between;
 }
 .storephoto .photolist image{
   width: 216rpx;
 	height: 216rpx;
 	border-radius: 10rpx;
+  margin-right: 3%;
+  margin-bottom: 30rpx;
 }
 
 .btnout{

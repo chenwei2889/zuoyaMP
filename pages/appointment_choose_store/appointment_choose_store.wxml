@@ -32,7 +32,7 @@
       </view>
       <view class="itemright">
         <view class="distance">距您{{ item.distance }}km</view>
-        <view class="detail" catchtap="toStoreDetail">
+        <view class="detail" catchtap="toStoreDetail" data-storeid="{{ item.id }}">
           <view>查看详情</view>
           <image src="/images/detail.png"></image>
         </view>

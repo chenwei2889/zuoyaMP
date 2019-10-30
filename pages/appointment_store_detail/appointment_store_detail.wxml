@@ -1,31 +1,30 @@
 <!--pages/appointment_store_detail/appointment_store_detail.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
-  <view class="title"> 
-    <view>正弘中心店（No.3102）</view>
+  <view class="title">
+    <view>{{ storeInfo.name }}</view>
     <image src="/images/storephone.png" bindtap="concact"></image>
   </view>
   <view class="storeopen">
     <view class="left">营业时间：</view>
     <view class="right">
-      <view>07:00-20:00</view>
+      <view>{{ storeInfo.businesshours }}</view>
     </view>
   </view>
   <view class="storeaddress">
     <text>门店地址：</text>
-    <view>金水区国基路168号普罗旺世二期西苑罗曼维森12号楼</view>
+    <view>{{ storeInfo.city }}{{ storeInfo.region }}{{ storeInfo.address }}</view>
   </view>
   <view class="empty"></view>
   <view class="storephoto">
     <view>门店图片</view>
     <view class="photolist">
-    <image src="/images/storephoto.png"></image>
-    <image src="/images/storephoto.png"></image>
-    <image src="/images/storephoto.png"></image>
+      <block wx:for="{{ photoList }}" wx:key="{{ index }}">
+        <image src="{{ item }}"></image>
+      </block>
     </view>
   </view>
   <view class="btnout">
     <button hover-class="none" class="btn">去预约</button>
   </view>
 </view>
-

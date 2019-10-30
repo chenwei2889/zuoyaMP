@@ -10,7 +10,7 @@ page {
 
 .detail {
   width: 100%;
-  height: 420rpx;
+  height: 490rpx;
   background-color: #fff;
   border-radius: 10rpx;
   padding: 0 30rpx;
@@ -18,7 +18,7 @@ page {
   margin-top: 82rpx;
 }
 
-.detail image {
+.detail .touxiang {
   width: 158rpx;
   height: 158rpx;
   position: absolute;
@@ -59,9 +59,29 @@ page {
   color: #f15a31;
 }
 
-.detail .rate .look {
+.detail .look {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  align-items: center;
+  color: #f15a31;
   font-size: 28rpx;
-  color: #00aeff;
+}
+
+.detail .look image{
+  width: 33rpx;
+	height: 33rpx;
+  margin-right: 11rpx;
+}
+
+.detail .look view{
+  display: flex;
+  align-items: center;
+}
+.detail .look view:first-child{
+  margin-right: 68rpx;
 }
 
 .detail .store {
@@ -80,7 +100,7 @@ page {
 
 .detail .store .right view:last-child {
   font-size: 24rpx;
-  margin-top: 24rpx;
+  margin-top: 16rpx;
 }
 
 .project {

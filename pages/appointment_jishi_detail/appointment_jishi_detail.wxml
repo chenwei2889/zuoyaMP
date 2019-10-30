@@ -2,17 +2,17 @@
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
   <view class="detail">
-    <image src="/images/touxiang.png"></image>
+    <image class="touxiang" src="/images/touxiang.png"></image>
     <view class="jishi">马丹（Eileen）</view>
     <view class="rate">
       <view class="comment">
-        <view>评论</view>
+        <view>评分</view>
         <van-rate color="#f15a31" size="{{ 15 }}" readonly allow-half value="{{ 4.5 }}" />
         <text>9.0</text>
       </view>
-      <navigator hover-class="none" url="../appointment_jishi_comment/appointment_jishi_comment">
+      <!-- 
         <view class="look">查看评论</view>
-      </navigator>
+       -->
     </view>
     <view class="store">
       <view class="left">门店</view>
@@ -20,6 +20,20 @@
         <view>正弘中心店</view>
         <view>郑州市金水区正弘中心D区10-7</view>
       </view>
+    </view>
+    <view class="look">
+      <navigator hover-class="none" url="../appointment_jishi_comment/appointment_jishi_comment">
+        <view>
+          <image src="/images/xiangmu.png"></image>
+          <view>查看评论</view>
+        </view>
+      </navigator>
+      <navigator hover-class="none" url="../appointment_jishi_comment/appointment_jishi_comment">
+        <view>
+          <image src="/images/xiangmu.png"></image>
+          <view>查看作品集</view>
+        </view>
+      </navigator>
     </view>
   </view>
   <view class="project">
@@ -54,7 +68,8 @@
           <view>￥498.00</view>
           <view>服务时长约60分钟</view>
         </view>
-      </view><view class="item">
+      </view>
+      <view class="item">
         <view class="itemleft">
           <image src="/images/hand.png"></image>
         </view>

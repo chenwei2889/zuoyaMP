@@ -8,14 +8,14 @@
           <view class="content">
             <navigator url="../project_detail/project_detail" hover-class="none">
               <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
+                <view class="itemleft">
+                  <image src="/images/hand.png"></image>
+                  <text>高效抗氧手部护理</text>
+                </view>
+                <view class="itemright">
+                  <text>约120分钟</text>
+                </view>
               </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
             </navigator>
             <view class="item">
               <view class="itemleft">
@@ -92,13 +92,41 @@
           </view>
         </view>
       </van-tab>
-      <van-tab title="美甲服务">内容 2</van-tab>
-      <van-tab title="美睫服务">内容 3</van-tab>
-      <van-tab title="手部护理">内容 4</van-tab>
-      <van-tab title="足部护理">内容 5</van-tab>
-      <van-tab title="净肤服务">内容 6</van-tab>
-      <van-tab title="修补服务">内容 7</van-tab>
-      <van-tab title="其他服务">内容 8</van-tab>
+      <van-tab title="美甲服务">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
+      <van-tab title="美睫服务">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
+      <van-tab title="手部护理">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
+      <van-tab title="足部护理">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
+      <van-tab title="净肤服务">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
+      <van-tab title="修补服务">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
+      <van-tab title="其他服务">
+        <view class="contentout">
+          <view class="content"></view>
+        </view>
+      </van-tab>
     </van-tabs>
   </view>
 </view>
