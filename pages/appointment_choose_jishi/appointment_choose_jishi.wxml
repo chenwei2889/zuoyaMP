@@ -16,39 +16,39 @@
     <view class="jishilist">
       <navigator hover-class="none" url="../appointment_jishi_detail/appointment_jishi_detail">
         <view class="item">
-        <image src="/images/touxiang.png"></image>
-        <text>马丹（Eileen）</text>
-      </view>
+          <image src="/images/touxiang.png"></image>
+          <text>马丹（Eileen）</text>
+        </view>
       </navigator>
       <navigator hover-class="none" url="../appointment_jishi_detail/appointment_jishi_detail">
         <view class="item">
-        <image src="/images/touxiang.png"></image>
-        <text>马丹（Eileen）</text>
-      </view>
+          <image src="/images/touxiang.png"></image>
+          <text>马丹（Eileen）</text>
+        </view>
       </navigator>
       <navigator hover-class="none" url="../appointment_jishi_detail/appointment_jishi_detail">
         <view class="item">
-        <image src="/images/touxiang.png"></image>
-        <text>马丹（Eileen）</text>
-      </view>
+          <image src="/images/touxiang.png"></image>
+          <text>马丹（Eileen）</text>
+        </view>
       </navigator>
       <navigator hover-class="none" url="../appointment_jishi_detail/appointment_jishi_detail">
         <view class="item">
-        <image src="/images/touxiang.png"></image>
-        <text>马丹（Eileen）</text>
-      </view>
+          <image src="/images/touxiang.png"></image>
+          <text>马丹（Eileen）</text>
+        </view>
       </navigator>
       <navigator hover-class="none" url="../appointment_jishi_detail/appointment_jishi_detail">
         <view class="item">
-        <image src="/images/touxiang.png"></image>
-        <text>马丹（Eileen）</text>
-      </view>
+          <image src="/images/touxiang.png"></image>
+          <text>马丹（Eileen）</text>
+        </view>
       </navigator>
       <navigator hover-class="none" url="../appointment_jishi_detail/appointment_jishi_detail">
         <view class="item">
-        <image src="/images/touxiang.png"></image>
-        <text>马丹（Eileen）</text>
-      </view>
+          <image src="/images/touxiang.png"></image>
+          <text>马丹（Eileen）</text>
+        </view>
       </navigator>
     </view>
   </view>
