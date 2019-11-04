@@ -1,4 +1,4 @@
-// pages/appointment_servelist/appointment_servelist.js
+// pages/tab/tab.js
 var app = getApp();
 Page({
 
@@ -9,13 +9,15 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '选择的服务',
-      'class': '2'
+      'title': '项目详情'
     },
-    navH: '',
-    currentIndex: 0
+    currentIndex: 0,
+    "firstList": ["LXT", "LXT", "LXT", "LXT", "LXT", "LXT"],
+    "secondList": ["GFF", "GFF", "GFF", "GFF", "GFF", "GFF", "GFF", "GFF"],
+    navH: ''
   },
 
+  //swiper切换时会调用
   pagechange: function(e) {
     console.log(e)
     this.setData({
@@ -26,20 +28,20 @@ Page({
   titleClick: function(e) {
     let that = this
     console.log(e)
-    if (this.data.currentIndex === e.currentTarget.dataset.idx) {
-      return false
-    } else {
+    if (this.data.currentIndex === e.currentTarget.dataset.idx){
+        return false
+    } else{
       that.setData({
         //拿到当前索引并动态改变
         currentIndex: e.currentTarget.dataset.idx
       })
     }
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    //导航高度
     this.setData({
       navH: app.globalData.navHeight
     })

@@ -1,0 +1,19 @@
+<!--pages/appointment_photodetail/appointment_photodetail.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="img">
+    <image src="/images/hand.png"></image>
+  </view>
+  <view class="img">
+    <image src="/images/hand.png"></image>
+  </view>
+  <view class="img">
+    <image src="/images/hand.png"></image>
+  </view>
+  <view class="img">
+    <image src="/images/hand.png"></image>
+  </view>
+  <view class="img">
+    <image src="/images/hand.png"></image>
+  </view>
+</view>

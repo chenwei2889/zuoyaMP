@@ -31,6 +31,7 @@ page {
   font-size:29rpx;
   color:#555;
 }
+
 .location .inputarea .placeholder{
   font-size: 24rpx;
 	color: #999999;
@@ -58,6 +59,10 @@ page {
 .item .choose{
   display: flex;
   align-items: center;
+  margin-right: 22rpx;
+}
+.chooseout{
+  display: flex;
 }
 .item .choose image{
   width: 31rpx;

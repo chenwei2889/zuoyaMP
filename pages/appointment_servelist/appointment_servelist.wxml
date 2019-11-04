@@ -1,132 +1,141 @@
 <!--pages/appointment_servelist/appointment_servelist.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
-<view class="container">
-  <view class="srollx">
-    <van-tabs sticky swipeable offset-top="{{ navH-0.00001 }}">
-      <van-tab title="全部">
-        <view class="contentout">
-          <view class="content">
-            <navigator url="../project_detail/project_detail" hover-class="none">
-              <view class="item">
-                <view class="itemleft">
-                  <image src="/images/hand.png"></image>
-                  <text>高效抗氧手部护理</text>
-                </view>
-                <view class="itemright">
-                  <text>约120分钟</text>
-                </view>
-              </view>
-            </navigator>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
-            <view class="item">
-              <view class="itemleft">
-                <image src="/images/hand.png"></image>
-                <text>高效抗氧手部护理</text>
-              </view>
-              <view class="itemright">
-                <text>约120分钟</text>
-              </view>
-            </view>
+<!-- <view class="container"> -->
+<view class="items" style="top: {{ navH }}">
+  <scroll-view scroll-x class='title'>
+    <view class="scroll_item {{0 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='0'>
+      <text>全部</text>
+    </view>
+    <view class="scroll_item {{1 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='1'>
+      <text>美甲服务</text>
+    </view>
+    <view class="scroll_item {{2 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='2'>
+      <text>美睫服务</text>
+    </view>
+    <view class="scroll_item {{3 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='3'>
+      <text>手部护理</text>
+    </view>
+    <view class="scroll_item {{4 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='4'>
+      <text>足部护理</text>
+    </view>
+    <view class="scroll_item {{5 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='5'>
+      <text>净肤服务</text>
+    </view>
+    <view class="scroll_item {{6 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='6'>
+      <text>瓷雕服务</text>
+    </view>
+  </scroll-view>
+</view>
+
+<!--内容布局-->
+<swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+  <swiper-item class='swiper-item'>
+    <view class="content">
+      <navigator url="../project_detail/project_detail" hover-class="none">
+        <view class="item">
+          <view class="itemleft">
+            <image src="/images/hand.png"></image>
+            <text>高效抗氧手部护理</text>
+          </view>
+          <view class="itemright">
+            <text>约120分钟</text>
           </view>
         </view>
-      </van-tab>
-      <van-tab title="美甲服务">
-        <view class="contentout">
-          <view class="content"></view>
+      </navigator>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
         </view>
-      </van-tab>
-      <van-tab title="美睫服务">
-        <view class="contentout">
-          <view class="content"></view>
+        <view class="itemright">
+          <text>约120分钟</text>
         </view>
-      </van-tab>
-      <van-tab title="手部护理">
-        <view class="contentout">
-          <view class="content"></view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
         </view>
-      </van-tab>
-      <van-tab title="足部护理">
-        <view class="contentout">
-          <view class="content"></view>
+        <view class="itemright">
+          <text>约120分钟</text>
         </view>
-      </van-tab>
-      <van-tab title="净肤服务">
-        <view class="contentout">
-          <view class="content"></view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
         </view>
-      </van-tab>
-      <van-tab title="修补服务">
-        <view class="contentout">
-          <view class="content"></view>
+        <view class="itemright">
+          <text>约120分钟</text>
         </view>
-      </van-tab>
-      <van-tab title="其他服务">
-        <view class="contentout">
-          <view class="content"></view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
         </view>
-      </van-tab>
-    </van-tabs>
-  </view>
-</view>
+        <view class="itemright">
+          <text>约120分钟</text>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
+        </view>
+        <view class="itemright">
+          <text>约120分钟</text>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
+        </view>
+        <view class="itemright">
+          <text>约120分钟</text>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemleft">
+          <image src="/images/hand.png"></image>
+          <text>高效抗氧手部护理</text>
+        </view>
+        <view class="itemright">
+          <text>约120分钟</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item class='swiper-item'>
+    <view wx:for="{{secondList}}" class='recordItem' wx:key>
+      <view class='name'>昵称：{{item}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item class='swiper-item'>
+    <view wx:for="{{secondList}}" class='recordItem' wx:key>
+      <view class='name'>昵称：{{item}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item class='swiper-item'>
+    <view wx:for="{{secondList}}" class='recordItem' wx:key>
+      <view class='name'>昵称：{{item}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item class='swiper-item'>
+    <view wx:for="{{secondList}}" class='recordItem' wx:key>
+      <view class='name'>昵称：{{item}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item class='swiper-item'>
+    <view wx:for="{{secondList}}" class='recordItem' wx:key>
+      <view class='name'>昵称：{{item}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item class='swiper-item'>
+    <view wx:for="{{secondList}}" class='recordItem' wx:key>
+      <view class='name'>昵称：{{item}}</view>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- </view> -->

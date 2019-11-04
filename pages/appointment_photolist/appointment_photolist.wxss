@@ -1,0 +1,38 @@
+/* pages/appointment_photolist/appointment_photolist.wxss */
+
+page {
+  background-color: #fff !important;
+}
+
+.container {
+  padding-left: 25rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-right: 3%;
+  padding-bottom: 40rpx;
+}
+
+.item .img {
+  width: 340rpx;
+  height: 340rpx;
+}
+
+.item .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.item .title {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 50rpx;
+}
+
+.item .num {
+  font-size: 24rpx;
+  color: #777;
+}

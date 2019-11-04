@@ -1,4 +1,4 @@
-// pages/appointment_jishi_comment/appointment_jishi_comment.js
+// pages/appointment_photolist/appointment_photolist.js
 Page({
 
   /**
@@ -8,22 +8,13 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '全部评论'
+      'title': '她的作品集'
     },
-    isFolded: true,
-    currentIndex: 0
   },
-  change: function (e) {
-    this.setData({
-      isFolded: !this.data.isFolded,
-      currentIndex: e.currentTarget.dataset.index
+  toDetail() {
+    wx.navigateTo({
+      url: '../appointment_photodetail/appointment_photodetail',
     })
-    console.log(e)
-    // if (this.data.currentIndex === e.currentTarget.dataset.index) {
-    //   this.setData({
-    //     isFolded: !this.data.isFolded,
-    //   })
-    // }
   },
   /**
    * 生命周期函数--监听页面加载

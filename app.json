@@ -1,8 +1,11 @@
 {
   "pages": [
     "pages/appointment/appointment",
+    "pages/tab/tab",
     "pages/appointment_yuejishi/appointment_yuejishi",
     "pages/appointment_servelist/appointment_servelist",
+    "pages/appointment_photolist/appointment_photolist",
+    "pages/appointment_photodetail/appointment_photodetail",
     "pages/appointment_choose_jishi/appointment_choose_jishi",
     "pages/appointment_info/appointment_info",
     "pages/appointment_detail/appointment_detail",

@@ -63,11 +63,20 @@ Page({
       { time: '22:00' },
       { time: '22:15' },
       { time: '22:30' }
-    ]
+    ],
+    currentIndex: 0
   },
 
-  settimeList(e) {
-    console.log(e)
+
+  settimeList(e){
+    this.setData({
+      currentIndex: e.currentTarget.dataset.index
+    })
+  },
+  pagechange(e){
+    this.setData({
+      currentIndex: e.detail.current
+    })
   },
   /**
    * 生命周期函数--监听页面加载

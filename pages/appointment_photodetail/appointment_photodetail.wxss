@@ -1,0 +1,23 @@
+/* pages/appointment_photodetail/appointment_photodetail.wxss */
+page {
+  background-color: #fff !important;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1rpx;
+}
+.img{
+  margin-right: 1rpx;
+  margin-bottom: 1rpx;
+  
+}
+.img image{
+  width: 248rpx;
+  height: 248rpx;
+}
+
+
+
+

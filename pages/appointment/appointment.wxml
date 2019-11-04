@@ -39,26 +39,50 @@
   </navigator>
   <view class='timelist'>
     <view class="time">
-      <view bindtap='settimeList' class="settimelist active">
+      <view bindtap='settimeList' class="settimelist {{0 == currentIndex ? 'active' : ''}}" data-index="0">
         <view>今天</view>
         <view>10-16</view>
       </view>
-      <view bindtap='settimeList' class="settimelist">
+      <view bindtap='settimeList' class="settimelist {{1 == currentIndex ? 'active' : ''}}" data-index="1">
         <view>明天</view>
         <view>10-17</view>
       </view>
-      <view bindtap='settimeList' class="settimelist">
+      <view bindtap='settimeList' class="settimelist {{2 == currentIndex ? 'active' : ''}}" data-index="2">
         <view>后天</view>
         <view>10-18</view>
       </view>
     </view>
-    <view class="scroll">
-      <scroll-view scroll-y enable-flex class="scrollarea active">
-        <block wx:for="{{timeArr}}" wx:key="{{index}}">
-          <text>{{ item.time }}</text>
-        </block>
-      </scroll-view>
-    </view>
+
+    <swiper class="swiper" bindchange='pagechange' current='{{currentIndex}}'>
+      <swiper-item class="swiper-item {{0 == currentIndex ? 'active' : ''}}">
+        <view class="scroll">
+          <scroll-view scroll-y enable-flex class="scrollarea">
+            <block wx:for="{{timeArr}}" wx:key="{{index}}">
+              <text>{{ item.time }}</text>
+            </block>
+          </scroll-view>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiper-item {{1 == currentIndex ? 'active' : ''}}">
+        <view class="scroll">
+          <scroll-view scroll-y enable-flex class="scrollarea">
+            <block wx:for="{{timeArr}}" wx:key="{{index}}">
+              <text>{{ item.time }}</text>
+            </block>
+          </scroll-view>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiper-item {{2 == currentIndex ? 'active' : ''}}">
+        <view class="scroll">
+          <scroll-view scroll-y enable-flex class="scrollarea">
+            <block wx:for="{{timeArr}}" wx:key="{{index}}">
+              <text>{{ item.time }}</text>
+            </block>
+          </scroll-view>
+        </view>
+      </swiper-item>
+    </swiper>
+
   </view>
   <view class="nextout">
     <view class="next">

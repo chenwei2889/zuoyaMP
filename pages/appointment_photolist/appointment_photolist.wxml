@@ -1,0 +1,39 @@
+<!--pages/appointment_photolist/appointment_photolist.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+    <view class="item" bindtap="toDetail">
+      <view class="img">
+        <image src="/images/hand.png"></image>
+      </view>
+      <view class="title">作品集名称</view>
+      <view class="num">7张</view>
+    </view>
+  <view class="item">
+    <view class="img">
+      <image src="/images/hand.png"></image>
+    </view>
+    <view class="title">作品集名称</view>
+    <view class="num">7张</view>
+  </view>
+  <view class="item">
+    <view class="img">
+      <image src="/images/hand.png"></image>
+    </view>
+    <view class="title">作品集名称</view>
+    <view class="num">7张</view>
+  </view>
+  <view class="item">
+    <view class="img">
+      <image src="/images/hand.png"></image>
+    </view>
+    <view class="title">作品集名称</view>
+    <view class="num">7张</view>
+  </view>
+  <view class="item">
+    <view class="img">
+      <image src="/images/hand.png"></image>
+    </view>
+    <view class="title">作品集名称</view>
+    <view class="num">7张</view>
+  </view>
+</view>
