@@ -1,0 +1,62 @@
+/* pages/count_login/count_login.wxss */
+page {
+  background-color: #fff !important;
+}
+
+.container {
+  padding: 0 75rpx;
+}
+
+.title .avatar{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin: 54rpx auto;
+}
+.title .avatar image{
+  max-width: 100%;
+  max-height: 100%;
+}
+.nickname{
+  text-align: center;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0;
+	color: #383737;
+}
+
+.welcome{
+  font-size: 26rpx;
+  line-height: 40rpx;
+  text-align: center;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0;
+	color: #383737;
+}
+
+.btnout .btn{
+  width: 600rpx;
+	height: 82rpx;
+	background-color: #51a833;
+  margin-top: 176rpx;
+	border-radius: 10rpx;
+  text-align: center;
+  line-height: 82rpx;
+  font-size: 32rpx;
+	color: #ffffff;
+}
+
+.phonelogin{
+  width: 600rpx;
+	height: 82rpx;
+	border-radius: 10rpx;
+	border: solid 2rpx #f15a31;
+  margin-top: 62rpx;
+  text-align: center;
+  line-height: 82rpx;
+  font-size: 32rpx;
+	color: #f15a31;
+}
+

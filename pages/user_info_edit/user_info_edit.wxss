@@ -1,0 +1,14 @@
+/* pages/user_info_edit/user_info_edit.wxss */
+page {
+  background-color: #fff !important;
+}
+
+.container {
+  padding: 0 40rpx;
+}
+
+.item {
+  width: 100%;
+  height: 90rpx;
+  border-bottom: solid 1rpx #f4f4f4;
+}

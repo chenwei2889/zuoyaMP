@@ -37,6 +37,10 @@ page {
   margin-right: 23rpx;
 }
 
+.timelist{
+  position: relative;
+}
+
 .time {
   height: 103rpx;
   display: flex;
@@ -61,7 +65,6 @@ page {
   height: 632rpx;
   background: #fff;
   border-radius: 10rpx;
-  position: relative;
 }
 .scroll {
   width: 100%;
@@ -76,7 +79,7 @@ page {
   padding: 40rpx 0 0 50rpx;
 }
 
-.swiper .swiper-item.active::before {
+/* .swiper .swiper-item.active::before {
   content: "";
   width: 0;
   height: 0;
@@ -88,7 +91,7 @@ page {
   z-index: 999;
   left: 10%;
   transform: translateX(-50%);
-}
+} */
 
 .scroll .scrollarea text {
   font-size: 28rpx;

@@ -15,13 +15,22 @@ Page({
     storeInfo: [],
     photoList: []
   },
-
+  
+  // 打电话
   concact() {
     wx.makePhoneCall({
       phoneNumber: '13412341234',
     })
   },
 
+  // 图片预览
+  imgPre(){
+    wx.previewImage({
+      urls: this.data.photoList,
+    })
+  },
+
+  // 获取店铺详情
   getStoreDetail: function () {
     var that = this;
     app.baseGet(app.U({

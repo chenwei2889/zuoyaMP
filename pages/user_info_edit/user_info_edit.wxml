@@ -1,0 +1,12 @@
+<!--pages/user_info_edit/user_info_edit.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class='item acea-row row-between-wrapper'>
+      <view>名字</view>
+      <view class='input'>
+        <input type='text' name='nickname' value='{{userInfo.nickname}}'></input>
+      </view>
+    </view>
+  </view>
+</view>

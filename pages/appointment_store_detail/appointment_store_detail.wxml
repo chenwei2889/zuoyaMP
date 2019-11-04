@@ -20,7 +20,7 @@
     <view>门店图片</view>
     <view class="photolist">
       <block wx:for="{{ photoList }}" wx:key="{{ index }}">
-        <image src="{{ item }}"></image>
+        <image src="{{ item }}" bindtap="imgPre"></image>
       </block>
     </view>
   </view>

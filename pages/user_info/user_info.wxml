@@ -1,0 +1,46 @@
+<!--pages/user_info/user_info.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">姓名</view>
+      <view class="itemright acea-row row-right">沃特脉轮</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">姓名</view>
+      <view class="itemright acea-row row-right">沃特脉轮</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">手机号</view>
+      <view class="itemright acea-row row-right">18888888888</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">性别</view>
+      <view class="itemright acea-row row-right">女</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">年龄</view>
+      <view class="itemright acea-row row-right">23岁</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">是否婚配</view>
+      <view class="itemright acea-row row-right">否</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">是否生育</view>
+      <view class="itemright acea-row row-right">否</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">家庭住址</view>
+      <view class="itemright">河南省郑州市中原区国家大学科技园某栋</view>
+    </view>
+  </view>
+  <view class="edit acea-row row-right">
+    <navigator url="../user_info_edit/user_info_edit">
+      <image src="/images/yuyuesuccess.png"></image>
+    </navigator>
+  </view>
+  <view class="logout acea-row row-center">
+    <view class="acea-row row-center row-middle">退出登录</view>
+  </view>
+</view>

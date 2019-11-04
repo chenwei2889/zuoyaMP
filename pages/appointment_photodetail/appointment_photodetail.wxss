@@ -6,16 +6,20 @@ page {
 .container{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 1rpx;
 }
 .img{
   margin-right: 1rpx;
   margin-bottom: 1rpx;
-  
 }
+
+.img view:nth-of-type(3n){
+  margin-right: 0;
+}
+
 .img image{
   width: 248rpx;
   height: 248rpx;
+  display: block;
 }
 
 

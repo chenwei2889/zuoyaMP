@@ -35,7 +35,7 @@
   <!-- 轮播结束 -->
   <!-- 内容部分开始 -->
   <view class="content">
-    <navigator url="../logs/logs" hover-class="none">
+    <navigator url="../count_login/count_login" hover-class="none">
       <view class="item">
       <view class="left">
         <text class="title">现在预约</text>
@@ -46,7 +46,7 @@
       </view>
     </view>
     </navigator>
-    <navigator url="../logs/logs" hover-class="none">
+    <navigator url="../user_info/user_info" hover-class="none">
       <view class="item">
       <view class="left">
         <text class="title">现在预约</text>
