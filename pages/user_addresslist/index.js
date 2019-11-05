@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/user_addresslist/index.js
 Page({
 
   /**
@@ -7,9 +7,15 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '个人中心'
+      'return': '1',
+      'title': '收货地址'
     }
+  },
+
+  addAddress() {
+    wx.navigateTo({
+      url: '../user_add_address/index',
+    })
   },
 
   /**

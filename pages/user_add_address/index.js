@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/user_add_address/index.js
 Page({
 
   /**
@@ -7,9 +7,10 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '个人中心'
-    }
+      'return': '1',
+      'title': '添加地址'
+    },
+    region: ['省份', '城市', '区县'],
   },
 
   /**

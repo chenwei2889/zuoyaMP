@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/user_membercard/index.js
 Page({
 
   /**
@@ -7,9 +7,15 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '个人中心'
+      'return': '1',
+      'title': '我的会员卡'
     }
+  },
+
+  toDetail() {
+    wx.navigateTo({
+      url: '../user_membercard_de/index',
+    })
   },
 
   /**

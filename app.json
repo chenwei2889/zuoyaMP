@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/user/user",
     "pages/appointment/appointment",
     "pages/appointment_status/appointment_status",
     "pages/appo_orderfinished_de/index",
@@ -25,8 +26,14 @@
     "pages/appointment_success/appointment_success",
     "pages/news/news",
     "pages/mall/mall",
-    "pages/user/user",
+    "pages/user_membercard/index",
+    "pages/user_membercard_de/index",
+    "pages/user_mybalance/index",
+    "pages/user_mybalance_de/index",
+    "pages/user_expense_de/index",
     "pages/user_info/user_info",
+    "pages/user_addresslist/index",
+    "pages/user_add_address/index",
     "pages/user_info_edit/user_info_edit",
     "pages/logs/logs",
     "components/navbar/index"

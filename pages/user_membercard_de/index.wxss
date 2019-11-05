@@ -1,0 +1,64 @@
+/* pages/user_membercard_de/index.wxss */
+page {
+  background-color: #fff !important;
+}
+
+.container{
+  padding: 0 60rpx;
+}
+
+.container .cardimg{
+  width: 630rpx;
+	height: 394rpx;
+  margin-top: 30rpx;
+}
+
+.cardimg image{
+  width: 100%;
+  border-radius: 10rpx;
+  height: 100%;
+}
+
+.content{
+  font-size: 30rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+  margin-top: 30rpx;
+}
+.content image{
+  width: 38rpx;
+	height: 38rpx;
+  margin-right: 12rpx;
+}
+
+.content .item{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: solid 1rpx #ecebeb;
+}
+
+.content .detail{
+  font-size: 24rpx;
+	color: #999999;
+  font-weight: normal;
+}
+
+.btnout{
+  margin-top: 102rpx;
+}
+
+.btnout .btn{
+  width: 360rpx;
+	height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+	border-radius: 10rpx;
+	border: solid 1rpx #f15a31;
+  font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #f15a31;
+}

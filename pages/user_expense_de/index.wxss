@@ -1,0 +1,38 @@
+/* pages/user_expense_de/index.wxss */
+.container{
+  padding: 0 40rpx;
+}
+.list{
+  padding-bottom: 50rpx;
+}
+.item{
+  width: 670rpx;
+	height: 146rpx;
+	background-color: #ffffff;
+	border-radius: 10rpx;
+  padding: 30rpx 35rpx;
+  margin-top: 24rpx;
+}
+
+.item .left{
+  font-size: 28rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.item .left view:last-child{
+  font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+  line-height: 50rpx;
+}
+.item .right{
+  font-size: 38rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}

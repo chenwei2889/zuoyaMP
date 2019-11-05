@@ -1,0 +1,26 @@
+<!--pages/user_mybalance/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="content">
+    <view class="balance">3.53</view>
+    <view>可提现金额（元）</view>
+    <view class="total">
+      <view class="item">
+        <view >4.00</view>
+        <view>累计收益（元）</view>
+      </view>
+      <view class="item">
+        <view>0</view>
+        <view>累计订单（笔）</view>
+      </view>
+    </view>
+  </view>
+  <view class="tixianout">
+    <view class="tixian" bindtap="goTixian">提现</view>  
+  </view>
+  <view class="godetailout">
+    <navigator url="../user_mybalance_de/index" hover-class="none">
+      <view class="godetail">查看明细</view>
+    </navigator>
+  </view>
+</view>

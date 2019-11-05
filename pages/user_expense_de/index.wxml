@@ -1,0 +1,20 @@
+<!--pages/user_expense_de/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item acea-row row-between-wrapper">
+      <view class="left">
+        <view>店内消费</view>
+        <view>2019-11-30 15:30</view>
+      </view>
+      <view class="right">-￥300.00</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="left">
+        <view>充值</view>
+        <view>2019-11-30 15:30</view>
+      </view>
+      <view class="right">+￥300.00</view>
+    </view>
+  </view>
+</view>

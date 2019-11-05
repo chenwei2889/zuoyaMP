@@ -1,2 +1,22 @@
 <!--pages/user/user.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <navigator url="../user_membercard/index" hover-class="none">
+    <view class="item">到我的会员卡</view>
+  </navigator>
+  <navigator url="../user_mybalance/index" hover-class="none">
+    <view class="item">到我的余额</view>
+  </navigator>
+  <navigator url="../user_addresslist/index" hover-class="none">
+    <view class="item">到收货地址</view>
+  </navigator>
+  <navigator url="" hover-class="none">
+    <view class="item"></view>
+  </navigator>
+  <navigator url="" hover-class="none">
+    <view class="item"></view>
+  </navigator>
+  <navigator url="" hover-class="none">
+    <view class="item"></view>
+  </navigator>
+</view>

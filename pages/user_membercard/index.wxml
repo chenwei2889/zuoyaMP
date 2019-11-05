@@ -1,0 +1,27 @@
+<!--pages/user_membercard/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="membercardlist">
+    <view class="item">
+      <view class="left">
+        <image src="/images/hand.png"></image>
+        <view class="middle">
+          <view class="title">储值卡</view>
+          <view>卡内余额：￥400.00</view>
+          <view>有效期至：2019-11-30</view>
+        </view>
+      </view>
+      <view class="todetail" bindtap="toDetail">查看详情</view>
+    </view>
+    <view class="item">
+      <view class="left">
+        <image src="/images/hand.png"></image>
+        <view class="middle">
+          <view class="title">储值卡</view>
+          <view>有效期至：2019-11-30</view>
+        </view>
+      </view>
+      <view class="todetail" bindtap="toDetail">查看详情</view>
+    </view>
+  </view>
+</view>

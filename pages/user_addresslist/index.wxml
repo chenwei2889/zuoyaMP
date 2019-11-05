@@ -1,0 +1,29 @@
+<!--pages/user_addresslist/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item">
+      <view class="name">郑威颂</view>
+      <view class="detail">
+        <view>18888888888</view>
+        <view>河南省郑州市中原区商城路与紫荆山路交叉口裕鸿国际</view>
+      </view>
+      <view class="delimg" bindtap="delete">
+        <image src="/images/delete.png"></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="name">陈威</view>
+      <view class="detail">
+        <view>18888888888</view>
+        <view>河南省郑州市中原区商城路与紫荆山路交叉口裕鸿国际</view>
+      </view>
+      <view class="delimg" bindtap="delete">
+        <image src="/images/delete.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="btnout" bindtap="addAddress">
+    <view class="btn">+新增地址</view>
+  </view>
+</view>

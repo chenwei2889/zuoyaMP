@@ -1,0 +1,4 @@
+/* pages/user_mybalance_de/index.wxss */
+page {
+  background-color: #fff !important;
+}

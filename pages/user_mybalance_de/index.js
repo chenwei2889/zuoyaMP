@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/user_mybalance_de/index.js
 Page({
 
   /**
@@ -7,8 +7,8 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '个人中心'
+      'return': '1',
+      'title': '余额明细'
     }
   },
 

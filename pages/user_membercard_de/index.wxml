@@ -1,0 +1,38 @@
+<!--pages/user_membercard_de/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="cardimg">
+    <image src="/images/hand.png"></image>
+  </view>
+  <view class="content">
+    <view class="item acea-row row-between-wrapper">
+      <view class="left acea-row">
+        <image src="/images/collection.png"></image>
+        <view>余额</view>
+      </view>
+      <view class="right">￥1999.00</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="left acea-row">
+        <image src="/images/collection.png"></image>
+        <view>有效期至</view>
+      </view>
+      <view class="right">2019-11-30</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="left acea-row">
+        <image src="/images/collection.png"></image>
+        <view>权益</view>
+      </view>
+      <view class="detail acea-row row-middle">
+        <text>查看会员卡详情</text>
+        <text class='iconfont icon-xiangyou'></text>
+      </view>
+    </view>
+  </view>
+  <view class="btnout acea-row row-center">
+    <navigator url="../user_expense_de/index" hover-class="none">
+      <view class="btn">查看消费明细</view>
+    </navigator>
+  </view>
+</view>

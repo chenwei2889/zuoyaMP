@@ -1,0 +1,44 @@
+/* pages/user_add_address/index.wxss */
+
+.list {
+  padding-left: 20rpx;
+  background: #fff;
+}
+
+.item {
+  width: 100%;
+  height: 102rpx;
+  border-bottom: solid 1px #e6e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.item input {
+  width: 100%;
+}
+
+.item picker {
+  width: 100%;
+}
+
+.placeholder {
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.picker {
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.submitbtn {
+  width: 690rpx;
+  height: 86rpx;
+  background-color: #f15a31;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 86rpx;
+  margin: 50rpx auto;
+  font-size: 32rpx;
+  color: #fff;
+}
