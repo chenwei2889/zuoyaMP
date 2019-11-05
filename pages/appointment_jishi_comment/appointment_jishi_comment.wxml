@@ -2,53 +2,17 @@
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
   <view class="commentlist">
-    <view class="item">
+    <view class="item" wx:for="{{ commentList }}" wx:key="{{ index }}">
       <view class="touxiang">
         <image src="/images/touxiang.png"></image>
       </view>
       <view class="info">
         <view>顾客名字</view>
         <view>2019.10.16 17:20</view>
-        <view class="content {{isFolded?'hide':'show'}}">评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。</view>
-        <view bindtap="change" data-index="0" class="state">{{currentIndex == 0 && isFolded?'展开':'收起'}}</view>
-        <block>
-          <view class="uploadimg">
-            <image src="/images/hand.png"></image>
-            <image src="/images/hand.png"></image>
-            <image src="/images/hand.png"></image>
-          </view>
-        </block>
-      </view>
-    </view>
-
-    <view class="item">
-      <view class="touxiang">
-        <image src="/images/touxiang.png"></image>
-      </view>
-      <view class="info">
-        <view>顾客名字</view>
-        <view>2019.10.16 17:20</view>
-        <view class="content {{isFolded?'hide':'show'}}">评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。</view>
-        <view bindtap="change" data-index="1" class="state">{{currentIndex === 1 && isFolded?'展开':'收起'}}</view>
-        <block>
-          <view class="uploadimg">
-            <image src="/images/hand.png"></image>
-            <image src="/images/hand.png"></image>
-            <image src="/images/hand.png"></image>
-          </view>
-        </block>
-      </view>
-    </view>
-
-    <view class="item">
-      <view class="touxiang">
-        <image src="/images/touxiang.png"></image>
-      </view>
-      <view class="info">
-        <view>顾客名字</view>
-        <view>2019.10.16 17:20</view>
-        <view class="content {{isFolded?'hide':'show'}}">评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。</view>
-        <view bindtap="change"  data-index="2" class="state">{{currentIndex === 2 && isFolded?'展开':'收起'}}</view>
+        <view class="content {{item.isFolded?'hide':'show'}}">
+          <text>{{ item.content }}</text>
+        </view>
+        <view bindtap="change" data-index="{{index}}" class="state">{{item.isFolded?'展开':'收起'}}</view>
         <block>
           <view class="uploadimg">
             <image src="/images/hand.png"></image>

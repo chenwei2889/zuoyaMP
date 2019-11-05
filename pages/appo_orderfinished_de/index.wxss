@@ -1,0 +1,122 @@
+/* pages/appo_orderfinished_de/index.wxss */
+page {
+  background-color: #fff !important;
+}
+
+.waitservice{
+  display: flex;
+  width: 100%;
+  height: 164rpx;
+  padding: 0 40rpx;
+  align-items: center;
+  font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+  background-color: #fff;
+  border-bottom: 20rpx solid #f4f5f7; 
+}
+.waitservice image{
+  width: 80rpx;
+	height: 80rpx;
+  margin-right: 17rpx;
+	/* background-color: #42b069;
+	border-radius: 10px; */
+}
+.waitservice .right view:nth-of-type(2){
+  font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #a09f9d;
+}
+.content .title{
+  padding: 0 40rpx;
+  width: 100%;
+  height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #bababa;
+}
+.content .title view:first-child{
+  font-size: 30rpx;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #252525;
+}
+.content .detail{
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200rpx;
+	background-color: #f4f5f7;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.content .detail image{
+  width: 150rpx;
+	height: 150rpx;
+  margin-right: 21rpx;
+}
+.content .detail .left{
+  display: flex;
+  align-items: center;
+}
+.content .detail .left view{
+  width: 340rpx;
+  white-space: pre-wrap;
+}
+.content .jishi{
+  padding: 0 40rpx;
+  border-bottom: 20rpx solid #f4f5f7; 
+  width: 100%;
+  height: 106rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.gostoreout{
+  padding-bottom: 59rpx;
+}
+.item{
+  width: 100%;
+  height: 126rpx;
+  padding: 0 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.item .right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right view:last-child{
+  font-size: 26rpx;
+	color: #989595;
+}
+
+.gostoreout .item .memberprice{
+  color: #f15a31;
+}

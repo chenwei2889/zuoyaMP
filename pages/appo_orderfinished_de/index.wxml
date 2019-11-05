@@ -1,0 +1,73 @@
+<!--pages/appo_orderfinished_de/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="waitservice">
+    <view class="left">
+      <image src="/images/waitservice.png"></image>
+    </view>
+    <view class="right">
+      <view>已完成</view>
+      <view>感谢您的到来，欢迎您下次光临</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="title">
+      <view>佐雅美业</view>
+      <view>北京双井富力城店</view>
+    </view>
+    <view class="detail">
+      <view class="left">
+        <image src="/images/hand.png"></image>
+        <view>我和我的祖国相“手”系列美甲</view>
+      </view>
+      <view class="right">￥598.00</view>
+    </view>
+    <view class="jishi">
+      <view>技师</view>
+      <view>马丹（Eileen）</view>
+    </view>
+  </view>
+  <view class="gostoreout">
+    <view class="item">
+      <view class="left">到店人</view>
+      <view class="right">
+        <view>沃特脉轮</view>
+        <view>18888888888</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="left">预约到店时间</view>
+      <view class="right">
+        <view>10-19 20:30</view>
+        <view>服务时长约120分钟</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="left">项目费用</view>
+      <view class="right">
+        <view>￥298.00</view>
+        <view class="memberprice">会员价：￥200.00</view>
+      </view>
+    </view>
+    <view class="item">
+      <view>优惠券</view>
+      <view>20元代金券</view>
+    </view>
+    <view class="item">
+      <view>材料费</view>
+      <view>￥100.00</view>
+    </view>
+    <view class="item">
+      <view>手工费</view>
+      <view>￥100.00</view>
+    </view>
+    <view class="item">
+      <view>总计</view>
+      <view>￥180.00</view>
+    </view>
+    <view class="item">
+      <view>支付方式</view>
+      <view>会员卡+支付宝</view>
+    </view>
+  </view>
+</view>

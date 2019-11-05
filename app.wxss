@@ -25,7 +25,9 @@ view{box-sizing:border-box;}
 .acea-row.row-column-around{flex-direction:column;justify-content:space-around;}
 .acea-row.row-center-wrapper{align-items:center;justify-content:center;}
 .acea-row.row-between-wrapper{align-items:center;justify-content:space-between;}
-.font-color{color:#fc4141!important;}
+.font-color{color:#f15a31!important;}
+.font-color-cancel{color:#c50450!important;}
+.font-color-finished{color:#04c551!important;}
 .bg-color{background-color:#e93323!important;}
 .icon-color{color:#ff3c2b;}
 .cart-color{color:#ff3700!important;border:1px solid #ff3700!important;}

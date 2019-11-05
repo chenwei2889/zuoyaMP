@@ -10,20 +10,27 @@ Page({
       'return': '1',
       'title': '全部评论'
     },
-    isFolded: true,
-    currentIndex: 0
+    // isFolded: true,
+    // currentIndex: 0,
+    commentList: [
+      {
+        isFolded: true,
+        content: '评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。'
+      },
+      {
+        isFolded: true,
+        content: '评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。'
+      }
+    ]
   },
   change: function (e) {
-    this.setData({
-      isFolded: !this.data.isFolded,
-      currentIndex: e.currentTarget.dataset.index
+    var that = this;
+    var commentList = that.data.commentList;
+    var row = commentList[e.currentTarget.dataset.index];
+    row.isFolded = !row.isFolded;
+    that.setData({
+      commentList: commentList
     })
-    console.log(e)
-    // if (this.data.currentIndex === e.currentTarget.dataset.index) {
-    //   this.setData({
-    //     isFolded: !this.data.isFolded,
-    //   })
-    // }
   },
   /**
    * 生命周期函数--监听页面加载
