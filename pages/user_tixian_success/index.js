@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/user_tixian_success/index.js
 Page({
 
   /**
@@ -7,15 +7,14 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '个人中心'
+      'return': '1',
+      'title': '提现'
     }
   },
 
-  share() {
-    console.log(1)
-    wx.showShareMenu({
-      withShareTicket: true
+  toDetail() {
+    wx.navigateTo({
+      url: '',
     })
   },
 

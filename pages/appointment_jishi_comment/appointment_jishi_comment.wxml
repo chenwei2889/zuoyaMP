@@ -12,7 +12,7 @@
         <view class="content {{item.isFolded?'hide':'show'}}">
           <text>{{ item.content }}</text>
         </view>
-        <view bindtap="change" data-index="{{index}}" class="state">{{item.isFolded?'展开':'收起'}}</view>
+        <view bindtap="change" data-index="{{index}}" class="state" wx:if="{{item.rowNum>2}}">{{item.isFolded?'展开':'收起'}}</view>
         <block>
           <view class="uploadimg">
             <image src="/images/hand.png"></image>

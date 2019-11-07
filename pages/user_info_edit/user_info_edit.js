@@ -9,7 +9,32 @@ Page({
       'navbar': '1',
       'return': '1',
       'title': '修改个人信息'
-    }
+    },
+    arraySex:['男','女'],
+    arraySheng: ['是','否'],
+    arrayHun: ['是', '否'],
+    indexSex: 0,
+    indexSheng: 0,
+    indexHun: 0,
+  },
+
+  bindSexChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      indexSex: e.detail.value
+    })
+  },
+  bindShengChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      indexSheng: e.detail.value
+    })
+  },
+  bindHunChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      indexHun: e.detail.value
+    })
   },
 
   /**

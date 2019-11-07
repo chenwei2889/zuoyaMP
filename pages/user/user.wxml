@@ -1,22 +1,119 @@
 <!--pages/user/user.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
+  <view class="header">
+    <view class="header-left">
+      <view class="avatar">
+        <image src="/images/touxiang.png"></image>
+      </view>
+      <view class="middle">
+        <view>沃特脉轮</view>
+        <view>
+          <image src="/images/collection.png"></image>
+          <text class="memberstatus">黑钻会员</text>
+        </view>
+      </view>
+    </view>
+    <view class="header-right">
+      <text class="iconfont icon-xiangyou"></text>
+    </view>
+  </view>
+  <view class="nav">
+    <navigator url="" hover-class="none">
+      <view class="navitem">
+        <!-- <view class='num'>{{userInfo.brokerage || 0}}</view> -->
+        <view>3张</view>
+        <view>会员卡</view>
+      </view>
+    </navigator>
+    <navigator url="" hover-class="none">
+      <view class="navitem">
+        <view>0张</view>
+        <view>优惠券</view>
+      </view>
+    </navigator>
+    <navigator url="" hover-class="none">
+      <view class="navitem">
+        <view>0人</view>
+        <view>邀请人数</view>
+      </view>
+    </navigator>
+    <navigator url="" hover-class="none">
+      <view class="navitem">
+        <view>0个</view>
+        <view>会员金币</view>
+      </view>
+    </navigator>
+  </view>
+  <view class="list">
+    <navigator hover-class="none" url="">
+      <view class="item">
+        <view class="item-left">
+          <image src="/images/collection.png"></image>
+          <view class="name">我的订单</view>
+        </view>
+        <view class="item-right">
+          <text class="iconfont icon-xiangyou"></text>
+        </view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="">
+      <view class="item">
+        <view class="item-left">
+          <image src="/images/collection.png"></image>
+          <view class="name">我的订单</view>
+        </view>
+        <view class="item-right">
+          <text class="iconfont icon-xiangyou"></text>
+        </view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="">
+      <view class="item">
+        <view class="item-left">
+          <image src="/images/collection.png"></image>
+          <view class="name">我的订单</view>
+        </view>
+        <view class="item-right">
+          <text class="iconfont icon-xiangyou"></text>
+        </view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="">
+      <view class="item">
+        <view class="item-left">
+          <image src="/images/collection.png"></image>
+          <view class="name">我的订单</view>
+        </view>
+        <view class="item-right">
+          <text class="iconfont icon-xiangyou"></text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 点击分享开始 -->
+  <view class="pic" bindtap="share">
+    <button hover-class="none" open-type="share" lang="zh_CN">
+      <image src="/images/indexshare.png"></image>
+    </button>
+  </view>
+  <!-- 点击分享结束 -->
   <navigator url="../user_membercard/index" hover-class="none">
-    <view class="item">到我的会员卡</view>
+    <view class="items">到我的会员卡</view>
   </navigator>
   <navigator url="../user_mybalance/index" hover-class="none">
-    <view class="item">到我的余额</view>
+    <view class="items">到我的余额</view>
   </navigator>
   <navigator url="../user_addresslist/index" hover-class="none">
-    <view class="item">到收货地址</view>
+    <view class="items">到收货地址</view>
   </navigator>
   <navigator url="" hover-class="none">
-    <view class="item"></view>
+    <view class="items"></view>
   </navigator>
   <navigator url="" hover-class="none">
-    <view class="item"></view>
+    <view class="items"></view>
   </navigator>
   <navigator url="" hover-class="none">
-    <view class="item"></view>
+    <view class="items"></view>
   </navigator>
 </view>

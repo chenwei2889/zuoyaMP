@@ -15,10 +15,13 @@
 
 .item input {
   width: 100%;
+  height: 102rpx;
 }
 
 .item picker {
   width: 100%;
+  height: 102rpx;
+  line-height: 102rpx;
 }
 
 .placeholder {

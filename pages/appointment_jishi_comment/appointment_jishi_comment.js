@@ -15,13 +15,16 @@ Page({
     commentList: [
       {
         isFolded: true,
-        content: '评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。'
+        content: '评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。',
+        rowNum: 3.7
       },
       {
         isFolded: true,
-        content: '评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不利于自己的一面，因此评论的话语容易产生对方的逆反心理。但由于可以较快的表达自己的想法及感受，广为被大众所使用，实则是说者过瘾，听者闹心。'
+        content: '评论，针对于事物进行主观或客观的自我印象阐述。评论易让人听到不。',
+        rowNum: 1.7
       }
-    ]
+    ],
+    conRowNum: 0
   },
   change: function (e) {
     var that = this;
@@ -36,7 +39,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(this.data.commentList)
+    // let list = this.data.commentList
+    // let that = this
+    
+    // list.forEach(function(item,i){
+    //   console.log(item.content.length)
+    //   let conLength = item.content.length
+    //   let conRowNum = (conLength * 22) / 589
+    //   console.log(conRowNum)
+    //   that.setData({
+    //     conRowNum: conRowNum
+    //   })
+    // })
+    // console.log(this.data.conRowNum)
   },
 
   /**

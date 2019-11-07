@@ -1,0 +1,10 @@
+<!--pages/user_tixian_success/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="main">
+    <image src="/images/yuyuesuccess.png"></image>
+    <view>提现成功</view>
+    <view>（预计24小时之内到账）</view>
+  </view>
+  <button class="btn" hover-class="none" bindtap="toDetail">完成</button>
+</view>

@@ -12,7 +12,7 @@
       <view class='item'>
           <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
             <view class='acea-row row-between-wrapper'>
-              <view class="picker">{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
+              <view class="picker">{{region[0]}}{{region[1]}}{{region[2]}}</view>
             </view>
           </picker>
       </view>

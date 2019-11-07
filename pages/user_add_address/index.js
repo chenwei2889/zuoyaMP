@@ -10,7 +10,15 @@ Page({
       'return': '1',
       'title': '添加地址'
     },
-    region: ['省份', '城市', '区县'],
+    region: ['省份、', '城市、', '区县'],
+  },
+
+  bindRegionChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    console.log(e)
+    this.setData({
+      region: e.detail.value
+    })
   },
 
   /**

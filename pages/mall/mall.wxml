@@ -1,2 +1,122 @@
 <!--pages/mall/mall.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class='header acea-row row-center-wrapper' style='top:{{navH}}rpx'>
+    <view class='acea-row row-between-wrapper input'>
+      <text class='iconfont icon-sousuo'></text>
+      <input type='text' placeholder='点击搜索商品信息' bindconfirm="searchSubmitValue" confirm-type='search' name="search" placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <!-- tabs布局 -->
+  <view class="items" style="top: {{ navH+95 }}rpx">
+    <scroll-view scroll-x class='title'>
+      <view class="scroll_item {{0 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='0'>
+        <text>全部</text>
+      </view>
+      <view class="scroll_item {{1 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='1'>
+        <text>美甲服务</text>
+      </view>
+      <view class="scroll_item {{2 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='2'>
+        <text>美睫服务</text>
+      </view>
+      <view class="scroll_item {{3 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='3'>
+        <text>手部护理</text>
+      </view>
+      <view class="scroll_item {{4 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='4'>
+        <text>足部护理</text>
+      </view>
+      <view class="scroll_item {{5 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='5'>
+        <text>净肤服务</text>
+      </view>
+      <view class="scroll_item {{6 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='6'>
+        <text>瓷雕服务</text>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 内容布局 -->
+  <view class="main">
+    <view class="content {{0 == currentIndex ? 'active' : ''}}">
+      <view class="swiper">
+        <!-- <swipers imgUrls="{{imgUrls}}"></swipers> -->
+        <image src="/images/banner.png"></image>
+      </view>
+      <view class="product">
+        <view class="title">
+          <view>杯壶</view>
+          <view>每天8杯水，健康的态度</view>
+        </view>
+        <view class="list">
+          <navigator url="" hover-class="none">
+            <view class="item">
+              <view class="proimg">
+                <image src="/images/hand.png"></image>
+              </view>
+              <view class="name">你值得拥有</view>
+              <view class="price">
+                <view>￥30</view>
+                <view>会员价￥25</view>
+              </view>
+            </view>
+          </navigator>
+          <navigator url="" hover-class="none">
+            <view class="item">
+              <view class="proimg">
+                <image src="/images/hand.png"></image>
+              </view>
+              <view class="name">你值得拥有</view>
+              <view class="price">
+                <view>￥30</view>
+                <view>会员价￥25</view>
+              </view>
+            </view>
+          </navigator>
+          <navigator url="../user_tixian_success/index" hover-class="none">
+            <view class="item">
+              <view class="proimg">
+                <image src="/images/hand.png"></image>
+              </view>
+              <view class="name">你值得拥有</view>
+              <view class="price">
+                <view>￥30</view>
+                <view>会员价￥25</view>
+              </view>
+            </view>
+          </navigator>
+          <navigator url="" hover-class="none">
+            <view class="item">
+              <view class="proimg">
+                <image src="/images/hand.png"></image>
+              </view>
+              <view class="name">你值得拥有你值得拥有你值得拥有你值得拥有你值得拥有你值得拥有</view>
+              <view class="price">
+                <view>￥30</view>
+                <view>会员价￥25</view>
+              </view>
+            </view>
+          </navigator>
+          <navigator url="" hover-class="none">
+            <view class="item">
+              <view class="proimg">
+                <image src="/images/hand.png"></image>
+              </view>
+              <view class="name">你值得拥有</view>
+              <view class="price">
+                <view>￥30</view>
+                <view>会员价￥25</view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class="content {{1 == currentIndex ? 'active' : ''}}">
+      内容2
+    </view>
+    <view class="content {{2 == currentIndex ? 'active' : ''}}">
+      内容3
+    </view>
+    <view class="content {{3 == currentIndex ? 'active' : ''}}">
+      内容4
+    </view>
+  </view>
+</view>

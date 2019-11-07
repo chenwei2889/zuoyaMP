@@ -1,4 +1,5 @@
 // pages/mall/mall.js
+var app = getApp();
 Page({
 
   /**
@@ -9,14 +10,32 @@ Page({
       'navbar': '1',
       'return': '0',
       'title': '商城'
-    }
+    },
+    navH: '',
+    currentIndex: 0
   },
 
+  //用户点击tab时调用
+  titleClick: function (e) {
+    let that = this
+    console.log(e)
+    if (this.data.currentIndex === e.currentTarget.dataset.idx) {
+      return false
+    } else {
+      that.setData({
+        //拿到当前索引并动态改变
+        currentIndex: e.currentTarget.dataset.idx
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //导航高度
+    this.setData({
+      navH: app.globalData.navHeight
+    })
   },
 
   /**

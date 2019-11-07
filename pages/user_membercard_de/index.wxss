@@ -45,6 +45,10 @@ page {
   font-weight: normal;
 }
 
+.detail .iconfont{
+  font-size: 24rpx;
+}
+
 .btnout{
   margin-top: 102rpx;
 }

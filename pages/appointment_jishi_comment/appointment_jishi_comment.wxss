@@ -1,4 +1,5 @@
 /* pages/appointment_jishi_comment/appointment_jishi_comment.wxss */
+
 page {
   background-color: #fff !important;
 }
@@ -7,58 +8,70 @@ page {
   padding: 0 40rpx;
 }
 
-.commentlist .item{
+.commentlist .item {
   display: flex;
   padding-bottom: 40rpx;
 }
-.commentlist .item .touxiang image{
+
+.commentlist .item .touxiang image {
   width: 66rpx;
-	height: 66rpx;
+  height: 66rpx;
 }
-.commentlist .item .info{
+
+.commentlist .item .info {
   margin-left: 15rpx;
   font-size: 28rpx;
-	color: #333333;
+  color: #333;
 }
-.commentlist .item .info view:nth-of-type(2){
+
+.commentlist .item .info view:nth-of-type(2) {
   font-size: 22rpx;
-	color: #666666;
+  color: #666;
   margin-bottom: 22rpx;
 }
 
-.content.hide{
+.content{
   font-size: 22rpx;
-  line-height:30rpx;
+  line-height: 30rpx;
   color: #333;
-  
+}
+
+.content.hide {
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #333;
   /*关键属性（必须有的）  */
-  display: -webkit-box; 
+  display: -webkit-box;
   /*规定子元素的排列方向 */
-  -webkit-box-orient: vertical; 
-   /*限制文本显示的行数  */
-  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  /*限制文本显示的行数  */
+  -webkit-line-clamp: 2;
   /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
   overflow: hidden;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
 }
- .content.show{
+
+/* .content.show {
   font-size: 22rpx;
-  line-height:30rpx;
+  line-height: 30rpx;
   color: #333;
   display: -webkit-box;
-  -webkit-box-orient:vertical;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  overflow:hidden;
+  overflow: hidden;
   -webkit-line-clamp: 0;
- }
-/*切换  */  
- .state{
-   text-align: right;
+} */
+
+/*切换  */
+
+.state {
+  text-align: right;
   font-size: 28rpx;
-	color: #01d8ff;
+  color: #01d8ff;
 }
-.uploadimg image{
+
+.uploadimg image {
   width: 164rpx;
-	height: 164rpx;
+  height: 164rpx;
   margin-left: 16rpx;
 }

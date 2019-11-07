@@ -1,31 +1,31 @@
-// pages/user/user.js
+// components/home/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    parameter: {
-      'navbar': '1',
-      'return': '0',
-      'title': '个人中心'
-    }
+    homeActive:false
   },
-
-  share() {
-    console.log(1)
-    wx.showShareMenu({
-      withShareTicket: true
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
+  setTouchMove: function (e) {
+    var that = this;
+    if (e.touches[0].clientY < 400 && e.touches[0].clientY > 66) {
+      that.setData({
+        top: e.touches[0].clientY
+      })
+    }
+  },
+  open:function(){
+     this.setData({
+       homeActive: !this.data.homeActive
+     })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
