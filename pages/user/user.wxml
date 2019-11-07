@@ -19,7 +19,7 @@
     </view>
   </view>
   <view class="nav">
-    <navigator url="" hover-class="none">
+    <navigator url="../user_membercard/index" hover-class="none">
       <view class="navitem">
         <!-- <view class='num'>{{userInfo.brokerage || 0}}</view> -->
         <view>3张</view>
@@ -57,11 +57,22 @@
         </view>
       </view>
     </navigator>
-    <navigator hover-class="none" url="">
+    <navigator hover-class="none" url="../user_mybalance/index">
       <view class="item">
         <view class="item-left">
           <image src="/images/collection.png"></image>
-          <view class="name">我的订单</view>
+          <view class="name">我的余额</view>
+        </view>
+        <view class="item-right">
+          <text class="iconfont icon-xiangyou"></text>
+        </view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="../user_addresslist/index">
+      <view class="item">
+        <view class="item-left">
+          <image src="/images/collection.png"></image>
+          <view class="name">收货地址</view>
         </view>
         <view class="item-right">
           <text class="iconfont icon-xiangyou"></text>
@@ -72,18 +83,7 @@
       <view class="item">
         <view class="item-left">
           <image src="/images/collection.png"></image>
-          <view class="name">我的订单</view>
-        </view>
-        <view class="item-right">
-          <text class="iconfont icon-xiangyou"></text>
-        </view>
-      </view>
-    </navigator>
-    <navigator hover-class="none" url="">
-      <view class="item">
-        <view class="item-left">
-          <image src="/images/collection.png"></image>
-          <view class="name">我的订单</view>
+          <view class="name">商学院</view>
         </view>
         <view class="item-right">
           <text class="iconfont icon-xiangyou"></text>
@@ -98,22 +98,4 @@
     </button>
   </view>
   <!-- 点击分享结束 -->
-  <navigator url="../user_membercard/index" hover-class="none">
-    <view class="items">到我的会员卡</view>
-  </navigator>
-  <navigator url="../user_mybalance/index" hover-class="none">
-    <view class="items">到我的余额</view>
-  </navigator>
-  <navigator url="../user_addresslist/index" hover-class="none">
-    <view class="items">到收货地址</view>
-  </navigator>
-  <navigator url="" hover-class="none">
-    <view class="items"></view>
-  </navigator>
-  <navigator url="" hover-class="none">
-    <view class="items"></view>
-  </navigator>
-  <navigator url="" hover-class="none">
-    <view class="items"></view>
-  </navigator>
 </view>

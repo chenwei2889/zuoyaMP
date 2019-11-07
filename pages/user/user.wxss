@@ -124,12 +124,5 @@ page {
   max-height: 112rpx;
 }
 
-.items{
-  width: 100%;
-  height: 100rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 

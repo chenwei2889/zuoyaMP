@@ -1,6 +1,7 @@
 <!--pages/user_addresslist/index.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
+  <!-- <view class="list" wx:if="{{ addressList.length>0 }}"> -->
   <view class="list">
     <view class="item">
       <view class="name">郑威颂</view>
@@ -22,6 +23,14 @@
         <image src="/images/delete.png"></image>
       </view>
     </view>
+    <!-- <view class="no-address" wx:else>
+      <view class="noadimg">
+        <image src=""></image>
+      </view>
+      <navigator url="../user_add_address/index" hover-class="none">
+        <view class="ada-btn">添加地址</view>
+      </navigator>
+    </view> -->
   </view>
   <view class="btnout" bindtap="addAddress">
     <view class="btn">+新增地址</view>
