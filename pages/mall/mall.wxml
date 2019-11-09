@@ -9,7 +9,10 @@
   </view>
   <!-- tabs布局 -->
   <view class="items" style="top: {{ navH+95 }}rpx">
-    <scroll-view scroll-x class='title'>
+    <scroll-view scroll-with-animation scroll-x class="title" bindscroll="scrollMove" scroll-left='{{scrollLeft}}'>
+      <view wx:for="{{nav}}" wx:key="*this" class="scroll_item {{currentIndex === index ? 'titleSel' : ''}}" bindtap="choseNav" id="ele{{index}}" data-index='{{index}}'>{{item}}</view>
+    </scroll-view>
+    <!-- <scroll-view scroll-x class='title'>
       <view class="scroll_item {{0 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='0'>
         <text>全部</text>
       </view>
@@ -31,14 +34,16 @@
       <view class="scroll_item {{6 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='6'>
         <text>瓷雕服务</text>
       </view>
-    </scroll-view>
+    </scroll-view> -->
   </view>
   <!-- 内容布局 -->
   <view class="main">
     <view class="content {{0 == currentIndex ? 'active' : ''}}">
       <view class="swiper">
         <!-- <swipers imgUrls="{{imgUrls}}"></swipers> -->
-        <image src="/images/banner.png"></image>
+        <navigator url="../mall_goodscart/index" hover-class="none">
+          <image src="/images/banner.png"></image>
+        </navigator>
       </view>
       <view class="product">
         <view class="title">

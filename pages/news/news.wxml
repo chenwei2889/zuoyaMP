@@ -1,2 +1,6 @@
 <!--pages/news/news.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
+<view bindtap="handleClick">
+
+  点击获取
+</view>

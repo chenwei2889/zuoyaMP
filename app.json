@@ -2,6 +2,9 @@
   "pages": [
     "pages/user/user",
     "pages/mall/mall",
+    "pages/mall_goods_de/index",
+    "pages/mall_goodscart/index",
+    "pages/mall_order_confirm/index",
     "pages/appointment/appointment",
     "pages/appointment_status/appointment_status",
     "pages/appo_orderfinished_de/index",
@@ -36,6 +39,8 @@
     "pages/user_addresslist/index",
     "pages/user_add_address/index",
     "pages/user_info_edit/user_info_edit",
+    "pages/user_coupon_list/index",
+    "pages/user_welcome_num/index",
     "pages/logs/logs",
     "components/navbar/index"
   ],

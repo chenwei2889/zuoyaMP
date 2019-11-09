@@ -80,7 +80,7 @@ page {
   display: flex;
   align-items: center;
 }
-.detail .look view:first-child{
+.detail .look .look-com{
   margin-right: 68rpx;
 }
 

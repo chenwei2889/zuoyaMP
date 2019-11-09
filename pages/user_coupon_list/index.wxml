@@ -1,0 +1,48 @@
+<!--pages/user_coupon_list/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item">
+      <view class="sum">
+        <view class="sum-left">
+          <view>美甲抵用券</view>
+          <view>有效期至2019-12-20</view>
+        </view>
+        <view class="sum-right">￥100</view>
+      </view>
+      <view class="rules">
+        <view class="rules-left" bindtap="handleClick">
+          <view>使用规则</view>
+          <text class="iconfont {{isFold ? 'icon-xiangxia' : 'icon-xiangshang'}}"></text>
+        </view>
+        <navigator url="" hover-class="none">
+          <view class="btn">立即预约</view>
+        </navigator>
+      </view>
+      <view class="rules-item" style="{{isFold ? 'display:none' : 'display:block'}}">本券可用于任何美甲产品本券可用于任何美甲产品本券可用于任何美甲产品本券可用于任何美甲产品</view>
+    </view>
+    <view class="item">
+      <view class="sum">
+        <view class="sum-left">
+          <view>美甲抵用券</view>
+          <view>有效期至2019-12-20</view>
+        </view>
+        <view class="sum-right">￥100</view>
+      </view>
+      <view class="rules">
+        <view class="rules-left" bindtap="handleClick">
+          <view>使用规则</view>
+          <text class="iconfont {{isFold ? 'icon-xiangxia' : 'icon-xiangshang'}}"></text>
+        </view>
+        <navigator url="" hover-class="none">
+          <view class="btn">立即预约</view>
+        </navigator>
+      </view>
+      <view class="rules-item" style="{{isFold ? 'display:none' : 'display:block'}}">本券可用于任何美甲产品本券可用于任何美甲产品本券可用于任何美甲产品本券可用于任何美甲产品</view>
+    </view>
+  </view>
+</view>
+
+
+<!-- {{isFold ? 'icon-xiangshang' : 'icon-xiangxia'}}
+ style="{{isFold ? 'display:none' : 'display:block'}} -->

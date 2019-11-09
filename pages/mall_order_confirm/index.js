@@ -1,4 +1,4 @@
-// pages/news/news.js
+// pages/mall_order_confirm/index.js
 Page({
 
   /**
@@ -7,23 +7,11 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '消息'
-    }
+      'return': '1',
+      'title': '订单确认',
+      'class': '2'
+    },
   },
-
-  handleClick() {
-    console.log(11)
-    // 
-    wx.startSoterAuthentication({
-      requestAuthModes: ['fingerPrint'],
-      challenge: '123456',
-      authContent: '请用指纹解锁',
-      success(res) {
-      }
-    })
-  },
-
 
   /**
    * 生命周期函数--监听页面加载

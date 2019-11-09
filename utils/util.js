@@ -333,6 +333,76 @@ const uploadImageOne = function (opt, successCallback, errorCallback) {
   })
 }
 
+/*
+ * 多图上传111
+ * @param object opt
+ * @param callable successCallback 成功执行方法 data 
+ * @param callable errorCallback 失败执行方法 
+ */
+const uploadImage = function (opt, successCallback, errorCallback) {
+  if (typeof opt === 'string') {
+    var url = opt;
+    opt = {};
+    opt.url = url;
+  }
+  var count = opt.count || 3,
+    sizeType = opt.sizeType || ['compressed'],
+    sourceType = opt.sourceType || ['album', 'camera'],
+    is_load = opt.is_load || true,
+    uploadUrl = opt.url || '',
+    inputName = opt.name || 'pics';
+  wx.chooseImage({
+    count: count, //最多可以选择的图片总数  
+    sizeType: sizeType, // 可以指定是原图还是压缩图，默认二者都有  
+    sourceType: sourceType, // 可以指定来源是相册还是相机，默认二者都有  
+    success: function (res) {
+      //启动上传等待中...  
+      const tempFilePath = res.tempFilePaths;
+      wx.showLoading({
+        title: '图片上传中',
+      });
+      for (let i = 0; i < tempFilePath.length; i++) {
+        wx.uploadFile({
+          url: uploadUrl,
+          filePath: tempFilePath[i],
+          name: inputName,
+          formData: {
+            'filename': inputName
+          },
+          header: {
+            "Content-Type": "multipart/form-data",
+            token: getApp().globalData.token
+          },
+          success: function (res) {
+            wx.hideLoading();
+            if (res.statusCode == 403) {
+              Tips({
+                title: res.data
+              });
+            } else {
+              var data = res.data ? JSON.parse(res.data) : {};
+              if (data.code == 200) {
+                successCallback && successCallback(data)
+              } else {
+                errorCallback && errorCallback(data);
+                Tips({
+                  title: data.msg
+                });
+              }
+            }
+          },
+          fail: function (res) {
+            wx.hideLoading();
+            Tips({
+              title: '上传图片失败'
+            });
+          }
+        })
+      }
+    }
+  })
+}
+
 /**
  * 移除数组中的某个数组并组成新的数组返回
  * @param array array 需要移除的数组
@@ -490,6 +560,7 @@ module.exports = {
   $h: $h,
   Tips: Tips,
   uploadImageOne: uploadImageOne,
+  uploadImage: uploadImage,
   basePost: basePost,
   SplitArray: SplitArray,
   U: U,

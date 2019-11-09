@@ -1,7 +1,7 @@
 <!--pages/appointment/appointment.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
-  <navigator url="../appointment_detail/appointment_detail" hover-class="none">
+  <navigator url="../appointment_servelist/appointment_servelist" hover-class="none">
     <view class="store">
       <view class="storeleft">
         <image src="/images/store.png"></image>

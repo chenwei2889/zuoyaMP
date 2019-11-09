@@ -1,0 +1,33 @@
+<!--pages/user_welcome_num/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item">
+      <view class="avatar">
+        <image src="/images/touxiang.png"></image>
+      </view>
+      <view class="content">
+        <view>沃特脉轮</view>
+        <view>2019-12-20 15:30</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="avatar">
+        <image src="/images/touxiang.png"></image>
+      </view>
+      <view class="content">
+        <view>沃特脉轮</view>
+        <view>2019-12-20 15:30</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="avatar">
+        <image src="/images/touxiang.png"></image>
+      </view>
+      <view class="content">
+        <view>沃特脉轮</view>
+        <view>2019-12-20 15:30</view>
+      </view>
+    </view>
+  </view>
+</view>

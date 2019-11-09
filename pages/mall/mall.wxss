@@ -53,6 +53,7 @@ page {
   font-size: 28rpx;
   white-space: nowrap;
   color: #666;
+  overflow:hidden;
 }
 
 .title .scroll_item {

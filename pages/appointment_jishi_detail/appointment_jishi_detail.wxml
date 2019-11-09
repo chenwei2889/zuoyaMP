@@ -25,7 +25,7 @@
       <navigator hover-class="none" url="../appointment_jishi_comment/appointment_jishi_comment">
         <view>
           <image src="/images/xiangmu.png"></image>
-          <view>查看评论</view>
+          <view class="look-com">查看评论</view>
         </view>
       </navigator>
       <navigator hover-class="none" url="../appointment_photolist/appointment_photolist">

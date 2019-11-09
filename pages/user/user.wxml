@@ -26,13 +26,13 @@
         <view>会员卡</view>
       </view>
     </navigator>
-    <navigator url="" hover-class="none">
+    <navigator url="../user_coupon_list/index" hover-class="none">
       <view class="navitem">
         <view>0张</view>
         <view>优惠券</view>
       </view>
     </navigator>
-    <navigator url="" hover-class="none">
+    <navigator url="../user_welcome_num/index" hover-class="none">
       <view class="navitem">
         <view>0人</view>
         <view>邀请人数</view>

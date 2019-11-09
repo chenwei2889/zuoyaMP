@@ -2,7 +2,10 @@
 <navbar parameter='{{parameter}}'></navbar>
 <!-- <view class="container"> -->
 <view class="items" style="top: {{ navH }}">
-  <scroll-view scroll-x class='title'>
+  <scroll-view scroll-with-animation scroll-x class="title" bindscroll="scrollMove" scroll-left='{{scrollLeft}}'>
+    <view wx:for="{{nav}}" wx:key="*this" class="scroll_item {{currentIndex === index ? 'titleSel' : ''}}" bindtap="choseNav" id="ele{{index}}" data-index='{{index}}'>{{item}}</view>
+  </scroll-view>
+  <!-- <scroll-view scroll-x class='title'>
     <view class="scroll_item {{0 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='0'>
       <text>全部</text>
     </view>
@@ -24,7 +27,7 @@
     <view class="scroll_item {{6 == currentIndex ? 'titleSel' : 'titleUnsel'}}" bindtap='titleClick' data-idx='6'>
       <text>瓷雕服务</text>
     </view>
-  </scroll-view>
+  </scroll-view> -->
 </view>
 
 <!--内容布局-->

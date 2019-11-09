@@ -1,0 +1,2 @@
+<!--pages/mall_order_confirm/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>

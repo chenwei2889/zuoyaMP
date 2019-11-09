@@ -1,0 +1,4 @@
+/* pages/mall_goods_de/index.wxss */
+page {
+  background-color: #fff !important;
+}

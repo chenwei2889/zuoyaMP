@@ -1,4 +1,4 @@
-// pages/news/news.js
+// pages/user_coupon_list/index.js
 Page({
 
   /**
@@ -7,23 +7,17 @@ Page({
   data: {
     parameter: {
       'navbar': '1',
-      'return': '0',
-      'title': '消息'
-    }
+      'return': '1',
+      'title': '优惠券'
+    },
+    isFold: true
   },
-
+  
   handleClick() {
-    console.log(11)
-    // 
-    wx.startSoterAuthentication({
-      requestAuthModes: ['fingerPrint'],
-      challenge: '123456',
-      authContent: '请用指纹解锁',
-      success(res) {
-      }
+    this.setData({
+      isFold: !this.data.isFold
     })
   },
-
 
   /**
    * 生命周期函数--监听页面加载
