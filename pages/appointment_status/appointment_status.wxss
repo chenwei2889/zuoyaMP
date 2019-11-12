@@ -102,7 +102,7 @@ page {
   text-align: center;
   line-height: 40rpx;
 	border-radius: 20rpx;
-	border: solid 1rpx #666666;
+	border: solid 1px #666666;
   font-size: 24rpx;
 	font-weight: normal;
 	font-stretch: normal;

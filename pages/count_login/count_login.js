@@ -1,4 +1,5 @@
 // pages/count_login/count_login.js
+var app = getApp();
 Page({
 
   /**
@@ -10,7 +11,7 @@ Page({
       'return': '1',
       'title': '账号登录'
     },
-    userInfo: {}
+    phoneNumber: ''
   },
 
   getUserInfo(e){
@@ -20,11 +21,39 @@ Page({
     })
   },
 
+  getPhoneNumber: function (e) {
+    console.log(e)
+    var detail = e.detail, cache_key = wx.getStorageSync('cache_key'), that = this;
+    if (detail.errMsg == 'getPhoneNumber:ok') {
+      if (!cache_key) {
+        app.globalData.token = '';
+        app.globalData.isLog = false;
+        return false;
+      }
+      app.basePost(app.U({ c: 'login', a: 'bind_mobile' }), {
+        iv: detail.iv,
+        cache_key: cache_key,
+        encryptedData: detail.encryptedData
+      }, function (res) {
+        console.log(res)
+        let phoneNumber= res.data.phoneNumber;
+        that.setData({ phoneNumber: phoneNumber });
+        wx.navigateTo({
+          url: '/pages/verifycode_login/verifycode_login?phone=' + phoneNumber
+        })
+      }, function (res) {
+        console.log(res)
+      });
+    } else {
+      app.Tips({ title: '取消授权' });
+    }
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

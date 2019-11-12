@@ -52,7 +52,8 @@
     "pages/jishi_bill_de/index",
     "pages/jishi_detail/index",
     "pages/logs/logs",
-    "components/navbar/index"
+    "components/navbar/index",
+    "components/authorize/authorize"
   ],
   "window": {
     "backgroundTextStyle": "light",

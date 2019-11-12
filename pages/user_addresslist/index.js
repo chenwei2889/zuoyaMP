@@ -12,6 +12,10 @@ Page({
     }
   },
 
+  onLoadFun() {
+
+  },
+  
   addAddress() {
     wx.navigateTo({
       url: '../user_add_address/index',

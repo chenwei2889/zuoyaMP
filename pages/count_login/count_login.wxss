@@ -7,33 +7,14 @@ page {
   padding: 0 75rpx;
 }
 
-.title .avatar{
-  width: 160rpx;
-  height: 160rpx;
-  border-radius: 50%;
-  margin: 54rpx auto;
+.logo{
+  width: 156rpx;
+	height: 155rpx;
+  margin: 116rpx auto;
 }
-.title .avatar image{
+.logo image{
   max-width: 100%;
   max-height: 100%;
-}
-.nickname{
-  text-align: center;
-  font-size: 28rpx;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 0;
-	color: #383737;
-}
-
-.welcome{
-  font-size: 26rpx;
-  line-height: 40rpx;
-  text-align: center;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 0;
-	color: #383737;
 }
 
 .btnout .btn{

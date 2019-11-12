@@ -36,3 +36,4 @@
     <view class="btn">+新增地址</view>
   </view>
 </view>
+<authorize bind:onLoadFun='onLoadFun'></authorize>

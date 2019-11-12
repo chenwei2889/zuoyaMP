@@ -1,15 +1,11 @@
 <!--pages/count_login/count_login.wxml-->
 <navbar parameter='{{parameter}}'></navbar>
 <view class="container">
-  <view class="title">
-    <view class="avatar">
-      <image src="{{ userInfo.avatarUrl }}"></image>
-    </view>
-    <view class="nickname">{{ userInfo.nickName || '游客' }}</view>
-    <view class="welcome">欢迎回来</view>
+  <view class="logo">
+    <image src="/images/hand.png"></image>
   </view>
   <view class="btnout">
-    <button class="btn" hover-class="none" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信一键登录</button>
+    <button class="btn" hover-class="none" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信一键登录</button>
   </view>
   <navigator url="../verifycode_login/verifycode_login" hover-class="none">
     <view class="phonelogin">
@@ -17,3 +13,5 @@
     </view>
   </navigator>
 </view>
+
+<authorize bind:onLoadFun="onLoadFun"></authorize>
