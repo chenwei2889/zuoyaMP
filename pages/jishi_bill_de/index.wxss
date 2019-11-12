@@ -1,0 +1,126 @@
+/* pages/jishi_bill_de/index.wxss */
+
+.container{
+  padding: 0 40rpx;
+  padding-bottom: 50rpx; 
+}
+.jishiserve{
+  width: 100%;
+  height: auto;
+}
+.jishiserve .title{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+	color: #b5b6b8;
+  margin-bottom: 25rpx;
+}
+.jishiserve .title image{
+  width: 24rpx;
+  height: 27rpx;
+  margin-right: 25rpx;
+}
+
+.serve-list{
+  margin-left: 49rpx;
+}
+
+.serve-item{
+  display: flex;
+  justify-content: space-between;
+  font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.serve-item .price{
+  font-size: 38rpx;
+	color: #f15a31;
+}
+
+.jishi{
+  margin-left: 49rpx;
+  font-size: 24rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.personal-data .list {
+  margin-top: 50rpx;
+  padding: 0 40rpx 40rpx 40rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.personal-data .item {
+  width: 100%;
+  border-bottom: solid 1px #cccccc;
+  height: 120rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.personal-data .item .input {
+  width: 415rpx;
+  text-align: right;
+}
+
+.personal-data .item .input .placeholder{
+  font-size: 28rpx;
+	color: #bbbbbb;
+}
+.picker{
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333;
+}
+
+.picker .iconfont{
+  font-size: 28rpx;
+}
+.personal-data .modifyBnt {
+  font-size: 32rpx;
+  color: #fff;
+  width: 450rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin: 30rpx auto 0 auto;
+}
+
+.card-status .title{
+  font-size: 36rpx;
+  line-height: 90rpx;
+  text-align: center;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.card-status image{
+  width: 54rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 20rpx;
+}
+
+.card-status .card-list .card-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+	height: 90rpx;
+  font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}

@@ -1,4 +1,5 @@
 // pages/user_add_address/index.js
+var app = getApp();
 Page({
 
   /**
@@ -11,6 +12,9 @@ Page({
       'title': '添加地址'
     },
     region: ['省份、', '城市、', '区县'],
+      real_name: '',
+      phone: '',
+      detail: ''
   },
 
   bindRegionChange: function (e) {
@@ -18,6 +22,39 @@ Page({
     console.log(e)
     this.setData({
       region: e.detail.value
+    })
+  },
+
+  /*
+  * 导入微信地址
+  */
+  getWxAddress: function () {
+    var that = this;
+    wx.authorize({
+      scope: 'scope.address',
+      success: function (res) {
+        wx.chooseAddress({
+          success: function (res) {
+            console.log(res)
+            var addressP = [res.provinceName, res.cityName, res.countyName];
+            let real_name = res.userName
+            let phone = res.telNumber
+            let detail = res.detailInfo
+            that.setData({
+              region: addressP,
+              real_name: real_name,
+              phone: phone,
+              detail: detail
+            })
+          },
+          fail: function (res) {
+            if (res.errMsg == 'chooseAddress:cancel') return app.Tips({ title: '取消选择' });
+          },
+        })
+      },
+      fail: function (res) {
+        console.log(res);
+      },
     })
   },
 

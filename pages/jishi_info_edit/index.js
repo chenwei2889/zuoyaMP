@@ -1,4 +1,4 @@
-// pages/user_addresslist/index.js
+// pages/jishi_info_edit/index.js
 Page({
 
   /**
@@ -8,27 +8,16 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '收货地址'
-    }
+      'title': '修改个人信息'
+    },
+    arraySex: ['男', '女'],
+    indexSex: 0,
   },
 
-  addAddress() {
-    wx.navigateTo({
-      url: '../user_add_address/index',
-    })
-  },
-
-  deleteAddress() {
-    wx.showModal({
-      content: '您确定删除该地址？',
-      confirmColor: '#f15a31',
-      success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
+  bindSexChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      indexSex: e.detail.value
     })
   },
 

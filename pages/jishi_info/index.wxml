@@ -1,0 +1,30 @@
+<!--pages/jishi_info/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">姓名</view>
+      <view class="itemright acea-row row-right">沃特脉轮</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">手机号</view>
+      <view class="itemright acea-row row-right">18888888888</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">性别</view>
+      <view class="itemright acea-row row-right">女</view>
+    </view>
+    <view class="item acea-row row-between-wrapper">
+      <view class="itemleft">年龄</view>
+      <view class="itemright acea-row row-right">23岁</view>
+    </view>
+  </view>
+  <view class="edit acea-row row-right">
+    <navigator url="../jishi_info_edit/index">
+      <image src="/images/yuyuesuccess.png"></image>
+    </navigator>
+  </view>
+  <view class="logout acea-row row-center">
+    <view class="acea-row row-center row-middle">退出登录</view>
+  </view>
+</view>

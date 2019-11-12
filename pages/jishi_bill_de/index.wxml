@@ -1,0 +1,143 @@
+<!--pages/jishi_bill_de/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="jishiserve">
+    <view class="title">
+      <image src="/images/xiangmu.png"></image>
+      <view>服务和技师</view>
+    </view>
+    <view class="serve-list">
+      <view class="serve-item">
+        <view>我和我的祖国相“手”系列</view>
+        <view class="price">￥598.00</view>
+      </view>
+      <view class="serve-item">
+        <view>我和我的祖国相“手”系列</view>
+        <view class="price">￥598.00</view>
+      </view>
+      <view class="serve-item">
+        <view>我和我的祖国相“手”系列</view>
+        <view class="price">￥598.00</view>
+      </view>
+      <view class="serve-item">
+        <view>我和我的祖国相“手”系列</view>
+        <view class="price">￥598.00</view>
+      </view>
+    </view>
+    <view class="jishi">马丹（Eileen）</view>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class='personal-data'>
+      <view class='list'>
+      <view class='item name acea-row row-between-wrapper'>
+        <view>到店人姓名</view>
+        <view class='input'>沃特脉轮</view>
+      </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>手机号</view>
+          <view class='input'>18888888888</view>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>预约金抵扣</view>
+          <view class='input'>20</view>
+        </view>
+        <view class='item acea-row row-between-wrapper' bindtap="cardStatus">
+          <view>会员卡</view>
+          <view class='input'>
+            {{ cardName }}
+            <text class='iconfont icon-xiangyou'></text>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper' bindtap="cardStatus">
+          <view>优惠券</view>
+          <view class='input'>
+            {{ cardName }}
+            <text class='iconfont icon-xiangyou'></text>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>服务费</view>
+          <view class='input'>
+            <input type='text' name='age' value='{{userInfo.nickname}}' placeholder="请输入消费金额" placeholder-class="placeholder"></input>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>手工费</view>
+          <view class='input'>
+            <input type='text' name='address' value='{{userInfo.address}}' placeholder="请输入消费金额" placeholder-class="placeholder"></input>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>材料费</view>
+          <view class='input'>
+            <input type='text' name='address' value='{{userInfo.address}}' placeholder="请输入消费金额" placeholder-class="placeholder"></input>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper' bindtap="payStatus">
+          <view>支付方式</view>
+          <view class='input'>
+            {{ payName }}
+            <text class='iconfont icon-xiangyou'></text>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>支付金额</view>
+          <view class='input'>
+            <input type='text' name='price' value='{{userInfo.price}}' placeholder="请输入消费金额" placeholder-class="placeholder"></input>
+          </view>
+        </view>
+        <view class='item acea-row row-between-wrapper'>
+          <view>实收金额</view>
+          <view class='input'>
+            <input type='text' name='price' value='{{userInfo.price}}' placeholder="请输入消费金额" placeholder-class="placeholder"></input>
+          </view>
+        </view>
+      </view>
+      <button class='modifyBnt bg-color' formType="submit">验证人脸</button>
+    </view>
+  </form>
+</view>
+
+<!-- 开卡类型蒙版 -->
+<view class="card-status">
+  <van-popup show="{{ cardShow }}" position="bottom" custom-style="height: 29%" bind:close="onClose">
+    <view class="title">选择卡类型</view>
+    <view class="card-list">
+      <view class="card-item" bindtap="card" data-name="储值卡">
+        <image src="/images/membercard.png"></image>
+        <view>储值卡</view>
+      </view>
+      <view class="card-item" bindtap="card" data-name="年卡">
+        <image src="/images/membercard.png"></image>
+        <view>年卡</view>
+      </view>
+      <view class="card-item" bindtap="card" data-name="押金年卡">
+        <image src="/images/membercard.png"></image>
+        <view>押金年卡</view>
+      </view>
+    </view>
+  </van-popup>
+</view>
+<!-- 开卡类型蒙版 -->
+
+<!-- 支付方式蒙版 -->
+<view class="card-status">
+  <van-popup show="{{ payShow }}" position="bottom" custom-style="height: 29%" bind:close="onClose">
+    <view class="title">选择支付方式</view>
+    <view class="card-list">
+      <view class="card-item" bindtap="pay" data-name="支付宝">
+        <image src="/images/membercard.png"></image>
+        <view>支付宝</view>
+      </view>
+      <view class="card-item" bindtap="pay" data-name="微信">
+        <image src="/images/membercard.png"></image>
+        <view>微信</view>
+      </view>
+      <view class="card-item" bindtap="pay" data-name="其他">
+        <image src="/images/membercard.png"></image>
+        <view>其他</view>
+      </view>
+    </view>
+  </van-popup>
+</view>
+<!-- 支付方式蒙版 -->

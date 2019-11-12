@@ -1,0 +1,147 @@
+<!--pages/jishi_shiming/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<form bindsubmit="formSubmit">
+  <view class='personal-data'>
+    <view class='item name acea-row row-between-wrapper'>
+      <view>姓名</view>
+      <view class='input'>
+        <input type='text' name='nickname' value='{{userInfo.nickname}}' placeholder="请输入姓名" placeholder-class="placeholder"></input>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='item acea-row row-between-wrapper'>
+        <view>手机号</view>
+        <view class='input'>
+          <input type='text' name='phone' value='{{userInfo.phone}}' placeholder="请输入手机号" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>身份证号</view>
+        <view class='input'>
+          <input type='text' name='phone' value='{{userInfo.idCardNum}}' placeholder="请输入身份证号" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>性别</view>
+        <view class='input'>
+          <picker bindchange="bindSexChange" value="{{indexSex}}" range="{{arraySex}}">
+            <view class="picker">
+              {{arraySex[indexSex]}}
+              <text class='iconfont icon-xiangxia'></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>年龄</view>
+        <view class='input'>
+          <input type='text' name='age' value='{{userInfo.nickname}}' placeholder="请输入年龄" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>是否生育</view>
+        <view class='input'>
+          <picker bindchange="bindShengChange" value="{{indexSheng}}" range="{{arraySheng}}">
+            <view class="picker">
+              {{arraySheng[indexSheng]}}
+              <text class='iconfont icon-xiangxia'></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>是否婚配</view>
+        <view class='input'>
+          <picker bindchange="bindHunChange" value="{{indexHun}}" range="{{arrayHun}}">
+            <view class="picker">
+              {{arrayHun[indexHun]}}
+              <text class='iconfont icon-xiangxia'></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>请选择出生日期</view>
+        <picker mode="date" bindchange="bindDateChange" value="{{date}}" start="1900-09-01" end="2030-09-01" custom-item="{{customItem}}">
+          <view class='acea-row row-between-wrapper'>
+            <view class="picker">
+              {{date}}
+              <text class='iconfont icon-xiangxia'></text>
+            </view>
+          </view>
+        </picker>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>家庭住址</view>
+        <view class='input'>
+          <input type='text' name='address' value='{{userInfo.address}}' placeholder="请输入家庭住址" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper' bindtap="cardStatus">
+        <view>开卡类型</view>
+        <view class='input'>
+          {{ cardName }}
+          <text class='iconfont icon-xiangyou'></text>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>开卡金额</view>
+        <view class='input'>
+          <input type='text' name='price' value='{{userInfo.price}}' placeholder="请输入金额" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper' bindtap="payStatus">
+        <view>支付方式</view>
+        <view class='input'>
+          {{ payName }}
+          <text class='iconfont icon-xiangyou'></text>
+        </view>
+      </view>
+    </view>
+    <button class='modifyBnt bg-color' formType="submit">提交</button>
+  </view>
+</form>
+
+<!-- 开卡类型蒙版 -->
+<view class="card-status">
+  <van-popup show="{{ cardShow }}" position="bottom" custom-style="height: 29%" bind:close="onClose">
+    <view class="title">选择卡类型</view>
+    <view class="card-list">
+      <view class="card-item" bindtap="card" data-name="储值卡">
+        <image src="/images/membercard.png"></image>
+        <view>储值卡</view>
+      </view>
+      <view class="card-item" bindtap="card" data-name="年卡">
+        <image src="/images/membercard.png"></image>
+        <view>年卡</view>
+      </view>
+      <view class="card-item" bindtap="card" data-name="押金年卡">
+        <image src="/images/membercard.png"></image>
+        <view>押金年卡</view>
+      </view>
+    </view>
+  </van-popup>
+</view>
+<!-- 开卡类型蒙版 -->
+
+<!-- 支付方式蒙版 -->
+<view class="card-status">
+  <van-popup show="{{ payShow }}" position="bottom" custom-style="height: 29%" bind:close="onClose">
+    <view class="title">选择支付方式</view>
+    <view class="card-list">
+      <view class="card-item" bindtap="pay" data-name="支付宝">
+        <image src="/images/membercard.png"></image>
+        <view>支付宝</view>
+      </view>
+      <view class="card-item" bindtap="pay" data-name="微信">
+        <image src="/images/membercard.png"></image>
+        <view>微信</view>
+      </view>
+      <view class="card-item" bindtap="pay" data-name="其他">
+        <image src="/images/membercard.png"></image>
+        <view>其他</view>
+      </view>
+    </view>
+  </van-popup>
+</view>
+<!-- 支付方式蒙版 -->

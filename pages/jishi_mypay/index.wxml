@@ -1,0 +1,27 @@
+<!--pages/jishi_mypay/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="header">
+    <view>1000.00</view>
+    <view>总工资（元）</view>
+  </view>
+  <view class="content">
+    <view class="item first">
+      <view>时间</view>
+      <view>2019-10<text class='iconfont icon-xiangxia'></text></view>
+    </view>
+    <view class="item">
+      <view>当月提成</view>
+      <view>￥40.00</view>
+    </view>
+    <view class="item">
+      <view>底薪</view>
+      <view>￥3000.00</view>
+    </view>
+    <view class="item last">
+      <view>今日业绩</view>
+      <view>￥15.00</view>
+    </view>
+  </view>
+  <view class="btn">查看提成明细</view>
+</view>

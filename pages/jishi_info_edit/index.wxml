@@ -1,0 +1,38 @@
+<!--pages/jishi_info_edit/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<form bindsubmit="formSubmit">
+  <view class='personal-data'>
+    <view class='list'>
+      <view class='item acea-row row-between-wrapper'>
+        <view>名字</view>
+        <view class='input'>
+          <input type='text' name='nickname' value='{{userInfo.nickname}}' placeholder="请输入姓名" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>手机号</view>
+        <view class='input'>
+          <input type='text' name='phone' value='{{userInfo.nickname}}' placeholder="请输入手机号" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>性别</view>
+        <view class='input'>
+          <picker bindchange="bindSexChange" value="{{indexSex}}" range="{{arraySex}}">
+            <view class="picker">
+              {{arraySex[indexSex]}}
+              <text class='iconfont icon-xiangxia'></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class='item acea-row row-between-wrapper'>
+        <view>年龄</view>
+        <view class='input'>
+          <input type='text' name='age' value='{{userInfo.nickname}}' placeholder="请输入年龄" placeholder-class="placeholder"></input>
+        </view>
+      </view>
+    </view>
+    <button class='modifyBnt bg-color' formType="submit">保存修改</button>
+  </view>
+</form>

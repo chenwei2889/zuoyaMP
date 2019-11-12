@@ -9,7 +9,7 @@
         <view>18888888888</view>
         <view>河南省郑州市中原区商城路与紫荆山路交叉口裕鸿国际</view>
       </view>
-      <view class="delimg" bindtap="delete">
+      <view class="delimg" bindtap="deleteAddress">
         <image src="/images/delete.png"></image>
       </view>
     </view>
@@ -19,7 +19,7 @@
         <view>18888888888</view>
         <view>河南省郑州市中原区商城路与紫荆山路交叉口裕鸿国际</view>
       </view>
-      <view class="delimg" bindtap="delete">
+      <view class="delimg" bindtap="deleteAddress">
         <image src="/images/delete.png"></image>
       </view>
     </view>

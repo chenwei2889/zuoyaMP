@@ -1,0 +1,37 @@
+<!--pages/jishi_myappointment/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class='nav acea-row row-around'>
+    <view class='item {{orderStatus==0 ? "on": ""}}' data-status="0" bindtap="statusClick">
+      <view>今日预约</view>
+    </view>
+    <view class='item {{orderStatus==1 ? "on": ""}}' data-status="1" bindtap="statusClick">
+      <view>已完成</view>
+    </view>
+    <view class='item {{orderStatus==2 ? "on": ""}}' data-status="2" bindtap="statusClick">
+      <view>已取消</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item">
+      <view class="title">
+        <view>顾客姓名</view>
+        <view class='font-color-finished'>待完成</view>
+        <!-- <view wx:if="{{item._status._type == 1}}" class='font-color-finished'>待完成</view>
+        <view wx:elif="{{item._status._type == 2}}" class='font-color'>已完成</view>
+        <view wx:elif="{{item._status._type == 3}}" class='font-color-cancel'>已取消</view> -->
+      </view>
+      <view class="detail">
+        <view class="left">
+          <image src="/images/hand.png"></image>
+          <view class="name">我和我的祖国相“手”系列美甲</view>
+        </view>
+        <view class="right">￥598.00</view>
+      </view>
+      <view class="bottom">
+        <view>预约到店： <text class="time">10-20 周日 15:30</text></view>
+        <view class="godetail" bindtap="goDetail">查看详情</view>
+      </view>
+    </view>
+  </view>
+</view>

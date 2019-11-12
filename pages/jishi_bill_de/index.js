@@ -1,4 +1,4 @@
-// pages/user_addresslist/index.js
+// pages/jishi_bill_de/index.js
 Page({
 
   /**
@@ -8,28 +8,42 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '收货地址'
-    }
+      'title': '账单详情',
+      'class': '2'
+    },
+    cardShow: false,
+    payShow: false,
+    cardName: '',
+    payName: ''
   },
 
-  addAddress() {
-    wx.navigateTo({
-      url: '../user_add_address/index',
+  // 蒙版选择
+  card(e) {
+    console.log(e)
+    this.setData({
+      cardName: e.currentTarget.dataset.name,
+      cardShow: false
+    })
+  },
+  pay(e) {
+    console.log(e)
+    this.setData({
+      payName: e.currentTarget.dataset.name,
+      payShow: false
     })
   },
 
-  deleteAddress() {
-    wx.showModal({
-      content: '您确定删除该地址？',
-      confirmColor: '#f15a31',
-      success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
-    })
+  cardStatus() {
+    this.setData({
+      cardShow: true
+    });
+  },
+  payStatus() {
+    this.setData({ payShow: true });
+  },
+  onClose() {
+    this.setData({ cardShow: false });
+    this.setData({ payShow: false });
   },
 
   /**

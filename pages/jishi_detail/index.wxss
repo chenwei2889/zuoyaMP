@@ -1,0 +1,93 @@
+/* pages/jishi_detail/index.wxss */
+page {
+  background-color: #f3f4f6 !important;
+}
+
+.container {
+  padding: 0 40rpx;
+}
+
+.detail {
+  width: 100%;
+  height: 410rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 0 30rpx;
+  position: relative;
+  margin-top: 82rpx;
+}
+
+.detail .touxiang {
+  width: 158rpx;
+  height: 158rpx;
+  position: absolute;
+  left: 256rpx;
+  top: -79rpx;
+}
+
+.detail .jishi {
+  font-size: 36rpx;
+  color: #000;
+  padding-top: 117rpx;
+  padding-bottom: 36rpx;
+  text-align: center;
+}
+
+.detail .rate {
+  width: 100%;
+  height: 108rpx;
+  border-top: solid 1px #dfe1e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail .rate .comment {
+  width: 350rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.detail .rate .comment text {
+  font-size: 32rpx;
+  font-weight: normal;
+  font-style: italic;
+  color: #f15a31;
+}
+
+.detail .store {
+  display: flex;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.detail .store .right {
+  margin-left: 36rpx;
+}
+
+.detail .store .right view:first-child {
+  color: #333;
+}
+
+.detail .store .right view:last-child {
+  font-size: 24rpx;
+  margin-top: 16rpx;
+}
+
+.look-btn{
+  width: 400rpx;
+	height: 80rpx;
+	background-color: #f15a31;
+	border-radius: 40rpx;
+  font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 135rpx auto 0 auto;
+}

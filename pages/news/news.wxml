@@ -2,5 +2,25 @@
 <navbar parameter='{{parameter}}'></navbar>
 <view bindtap="handleClick">
 
-  点击获取
 </view>
+<navigator url="../jishi_ticheng_de/index">
+  <view class="item">提成明细</view>
+</navigator>
+<navigator url="../jishi_info/index">
+  <view class="item">个人信息</view>
+</navigator>
+<navigator url="../jishi_detail/index">
+  <view class="item">技师详情</view>
+</navigator>
+<navigator url="../jishi_myappointment/index">
+  <view class="item">我的预约</view>
+</navigator>
+<navigator url="../jishi_shiming/index">
+  <view class="item">实名认证</view>
+</navigator>
+<navigator url="../jishi_bill_de/index">
+  <view class="item">账单详情</view>
+</navigator>
+<navigator url="../jishi_mypay/index">
+  <view class="item">我的工资</view>
+</navigator>

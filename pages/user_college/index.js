@@ -1,4 +1,4 @@
-// pages/user_addresslist/index.js
+// pages/user_college/index.js
 Page({
 
   /**
@@ -8,26 +8,25 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '收货地址'
+      'title': '商学院'
     }
   },
 
-  addAddress() {
-    wx.navigateTo({
-      url: '../user_add_address/index',
-    })
-  },
-
-  deleteAddress() {
-    wx.showModal({
-      content: '您确定删除该地址？',
-      confirmColor: '#f15a31',
+  learning(e) {
+    wx.downloadFile({
+      // e.target.dataset.name 是文件的地址
+      // url: e.target.dataset.name,
+      url: 'http://zuoya.heiwangke.net/public/uploads/config/file/5dc6699248bec.pdf',
       success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
+        const filePath = res.tempFilePath;
+        console.log(filePath)
+        wx.openDocument({
+          filePath,
+          fileType: 'pdf',
+          success(res) {
+            console.log(res)
+          }
+        })
       }
     })
   },

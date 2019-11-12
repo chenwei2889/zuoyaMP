@@ -57,7 +57,7 @@ page {
   justify-content: space-between;
 }
 .jishiserve .content .left{
-  margin-left: 54rpx;
+  margin-left: 49rpx;
 }
 .jishiserve .content .left view:first-child{
   width: 420rpx;

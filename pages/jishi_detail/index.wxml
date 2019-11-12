@@ -1,0 +1,26 @@
+<!--pages/jishi_detail/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="detail">
+    <image class="touxiang" src="/images/touxiang.png"></image>
+    <view class="jishi">马丹（Eileen）</view>
+    <view class="rate">
+      <view class="comment">
+        <view>评分</view>
+        <van-rate color="#f15a31" size="{{ 15 }}" readonly allow-half value="{{ 4.5 }}" />
+        <text>9.0</text>
+      </view>
+      <!-- 
+        <view class="look">查看评论</view>
+       -->
+    </view>
+    <view class="store">
+      <view class="left">门店</view>
+      <view class="right">
+        <view>正弘中心店</view>
+        <view>郑州市金水区正弘中心D区10-7</view>
+      </view>
+    </view>
+  </view>
+  <view class="look-btn" bindtap="toComment">查看顾客评价</view>
+</view>

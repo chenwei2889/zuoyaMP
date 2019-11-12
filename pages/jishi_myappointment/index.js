@@ -1,4 +1,4 @@
-// pages/user_addresslist/index.js
+// pages/jishi_myappointment/index.js
 Page({
 
   /**
@@ -8,27 +8,20 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '收货地址'
-    }
+      'title': '我的预约'
+    },
+    orderStatus: 0,
   },
 
-  addAddress() {
+  goDetail() {
     wx.navigateTo({
-      url: '../user_add_address/index',
+      url: '../jishi_myappo_de/index',
     })
   },
 
-  deleteAddress() {
-    wx.showModal({
-      content: '您确定删除该地址？',
-      confirmColor: '#f15a31',
-      success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
+  statusClick(e) {
+    this.setData({
+      orderStatus: e.currentTarget.dataset.status
     })
   },
 

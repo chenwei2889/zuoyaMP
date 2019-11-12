@@ -1,0 +1,27 @@
+<!--pages/jishi_ticheng_de/index.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="container">
+  <view class="list">
+    <view class="item">
+      <view class="left">
+        <view>开卡提成</view>
+        <view>2019-12-20 15:30</view>
+      </view>
+      <view class="right">+￥30.00</view>
+    </view>
+    <view class="item">
+      <view class="left">
+        <view>开卡提成</view>
+        <view>2019-12-20 15:30</view>
+      </view>
+      <view class="right">+￥30.00</view>
+    </view>
+    <view class="item">
+      <view class="left">
+        <view>开卡提成</view>
+        <view>2019-12-20 15:30</view>
+      </view>
+      <view class="right">+￥30.00</view>
+    </view>
+  </view>
+</view>

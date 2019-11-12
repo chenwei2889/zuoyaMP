@@ -8,7 +8,8 @@ Page({
     parameter: {
       'navbar': '1',
       'return': '1',
-      'title': '余额明细'
+      'title': '余额明细',
+      'class': '2'
     }
   },
 

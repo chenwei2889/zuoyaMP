@@ -1,1 +1,8 @@
 /* pages/news/news.wxss */
+.item{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -79,7 +79,7 @@
         </view>
       </view>
     </navigator>
-    <navigator hover-class="none" url="">
+    <navigator hover-class="none" url="../user_college/index">
       <view class="item">
         <view class="item-left">
           <image src="/images/collection.png"></image>
